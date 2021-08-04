@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import CustomNav from './Components/Nav/CustomNav';
+import Sidebar from './Components/Sidebar';
 import Home from './Pages/Home'
 import Resume from './Pages/Resume';
 import Projects from './Pages/Projects';
@@ -11,6 +12,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <CustomNav/>
+        <Sidebar/>
         <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/resume" exact component={Resume}/>
