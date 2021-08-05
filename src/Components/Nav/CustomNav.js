@@ -1,20 +1,20 @@
 import React from 'react';
-import { NavLink, Nav, Bars, NavMenu, NavBtn, NavBtnLink } from './NavElements';
+import { NavBrand, NavLink, Nav, Bars, NavMenu, NavBtn, NavBtnLink } from './NavElements';
 
-const CustomNav = () => {
+const CustomNav = ({ toggle }) => {
   return (
     <>
     <Nav>
-      <NavLink to="/"><h1>Carl G.W. Smith</h1></NavLink>
-      <Bars />
+      <NavBrand to="/"><h1 className="brand">Carl G.W. Smith</h1></NavBrand>
+      <Bars onClick={ toggle }/>
       <NavMenu>
         <NavLink to="/resume" activeStyle>Resume</NavLink>
         <NavLink to="/projects" activeStyle>Projects</NavLink>
         <NavLink to="/contact" activeStyle>Contact</NavLink>
       </NavMenu>
-      <NavBtn>
+      {/* <NavBtn>
         <NavBtnLink to="/"></NavBtnLink>
-      </NavBtn>
+      </NavBtn> */}
     </Nav>
     </>
   );

@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #383838;
   display: grid;
   align-items: center;
   top: 0;
@@ -46,6 +46,8 @@ text-align:center;
 `;
 
 export const SidebarLink = styled(Link)`
+text-transform:uppercase;
+font-family: 'Work Sans', sans-serif;
 color:#fff;
 display:flex;
 align-items: center;
@@ -55,9 +57,12 @@ font-size:1.5rem;
 list-style:none;
 cursor: pointer;
 transition: 0.2s ease-in-out;
-
+&.active{
+  color:#fcd115;
+}
 &:hover{
-  color:#15cdfc;
+  letter-spacing:.2em;
+  color:#fcd115;
   transition: 0.2s ease-in-out;
 }
 `;
