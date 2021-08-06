@@ -1,32 +1,65 @@
 import styled from "styled-components";
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import {Link} from 'react-router-dom'
 
 export const HeroContainer = styled.div`
-background:#f2f2f2;
+background:#fff;
 display:flex;
-padding:0 40px;
-height:400px;
+padding:0 5rem;
+height:500px;
 position: relative;
 align-items: center;
 justify-content: center;
 z-index:1;
+
+@media screen and (max-width:700px){
+padding-top:40px;
+}
 `;
 
 export const HeroH1 = styled.h1`
 font-family:'Work Sans', sans-serif;
-font-size:1.4rem;
-font-weight:400;
+font-size:2.5rem;
+font-weight:500;
 text-align:center;
 color:#383838;
 `
 export const HeroSpan = styled.span`
 font-family:'Work Sans', sans-serif;
-font-size:1.4rem;
-font-weight:400;
+font-size:2.5rem;
+font-weight:500;
 text-align:center;
 font-style: italic;
 color:#383838;
 `
 
 export const HeroImg = styled.img`
-background:url('')
+height: 120px;
+border: 2px solid;
+box-shadow: 5px 5px 9px 0 rgb(0 0 0 / 15%), -5px -5px 9px 0 rgb(255 255 255 / 13%);
+border-radius: 80px;
+`
+export const HeroBtnWrapper = styled.div`
+margin-top:32px;
+display:flex;
+flex-direction: column;
+align-items: center;
+`
+export const ArrowForward = styled(MdArrowForward)`
+margin-left:8px;
+font-size:20px;
+`
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+margin-left:8px;
+font-size:20px;
+`
+export const HeroContent = styled.div`
+z-index:3;
+max-width:1200px;
+position:absolute;
+padding:8px 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
 `
