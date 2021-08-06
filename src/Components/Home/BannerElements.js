@@ -38,6 +38,7 @@ height: 120px;
 border: 4px solid #fff;
 box-shadow: 5px 5px 9px 0 rgb(0 0 0 / 15%), -5px -5px 9px 0 rgb(255 255 255 / 13%);
 border-radius: 80px;
+transition: all 0.2s ease-in-out;
 `
 export const HeroBtnWrapper = styled.div`
 margin-top:32px;
