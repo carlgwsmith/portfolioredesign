@@ -26,11 +26,11 @@ height:100%;
 cursor: pointer;
 transition: 0.2s ease-in-out;
 &.active{
-  color:#15a2fc;
+  color:#ffb80b;
 }
 &:hover{
   letter-spacing:.10em;
-  color:#15a2fc;
+  color: #ffb80b;
   transition: 0.2s ease-in-out;
 }
 `
@@ -47,7 +47,7 @@ height:100%;
 cursor: pointer;
 
 &.active{
-  color:#15a2fc;
+  color:#ffb80b;
 }
 `
 export const Bars = styled(FaBars)`

@@ -14,7 +14,7 @@ const Banner = () => {
       <HeroContainer>
         <HeroContent>
         <HeroImg src={process.env.PUBLIC_URL + '/images/carl1.jpg'}></HeroImg>
-        <HeroH1>Carl G.W. Smith is a <span style={{color:'#15a2fc'}}>d</span><Typewriter
+        <HeroH1>Carl G.W. Smith is a <span style={{color:'#ffb80b'}}>d</span><Typewriter
         options={{
           strings: ['eveloper', 'esigner', 'ad'],
           cursorClassName: 'typewriterCursor',

@@ -23,7 +23,7 @@ code {
   animation: blink-1 1.7s 1s infinite both;
 }
 .typewriterWrapper{
-  color:#15a2fc;
+  color:#ffb80b;
 }
 @-webkit-keyframes blink-1 {
   0%,
