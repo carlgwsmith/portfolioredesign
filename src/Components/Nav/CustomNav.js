@@ -5,7 +5,7 @@ const CustomNav = ({ toggle }) => {
   return (
     <>
     <Nav>
-      <NavBrand to="/"><h1 className="brand">Carl G.W. Smith</h1></NavBrand>
+      <NavBrand to="/"><img src={process.env.PUBLIC_URL + '/images/cgwslogo.svg'} alt='logo' height="60px"></img></NavBrand>
       <Bars onClick={ toggle }/>
       <NavMenu>
         <NavLink to="/resume" activeStyle>Resume</NavLink>
