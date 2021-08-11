@@ -3,14 +3,37 @@ import styled from "styled-components";
 export const ResumeContainer = styled.div `
 display: grid; 
 grid-template-columns: 2fr 2fr; 
-grid-template-rows: 2fr 2fr; 
+/* grid-template-rows: 2fr 2fr;  */
 gap: 0px 0px;
-padding:30px;
-grid-template-areas: 
-  "Side-A Side-B Side-B"
-  "Side-A Side-B Side-B"
-  "Side-A Side-B Side-B"; 
+padding:20px 40px;
+grid-template-areas:
+  "About About"
+  "Side-A Side-B"
+  "Side-A Side-B"
+  "Side-A Side-B";
+  
+@media screen and (max-width:480px){
+  grid-template-columns: 2fr; 
+  /* grid-template-rows: 2fr; */
+  grid-template-areas:
+  "About"
+  "Side-A"
+  "Side-B"; 
+}
 `
+export const About = styled.div`
+grid-area: About;
+text-align:left;
+`
+export const AboutMe = styled.p`
+font-family:'Work sans', sans-serif;
+line-height:1.7em;
+margin-bottom:40px;
+margin-left:20px;
+padding-left:20px;
+border-left:4px solid #e3e3ee;
+`
+
 export const SideA = styled.div`
 grid-area: Side-A;
 text-align:left;
@@ -27,6 +50,9 @@ color: #383838;
 letter-spacing: .1em;
 font-weight: 600;
 text-transform: uppercase;
+display: inline-block;
+vertical-align: middle;
+margin:10px 0;
 `
 export const SchoolName = styled.p`
 font-size:1.2em;

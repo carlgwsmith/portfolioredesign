@@ -9,6 +9,48 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.contactForm{
+padding:30px;
+font-family:'Work Sans', sans-serif;
+}
+input {
+  width: 100%;
+  margin-bottom:20px;
+  padding:10px;
+  border-radius:5px;
+  border:1px solid #b9b9b9;
+  font-size:15px;
+  color:#383838;
+  margin-top:8px;
+  background-color: #f0f0f0;
+}
+textarea{
+  width: 100%;
+  margin-bottom:20px;
+  height:200px;
+  padding:10px;
+  border-radius:5px;
+  border:1px solid #b9b9b9;
+  margin-top:8px;
+  background-color: #f0f0f0;
+}
+textarea:focus, input:focus{
+  outline-color: orange;
+  background-color:rgb(253, 246, 232)
+}
+.submitBtn{
+  display: block;
+  font-family:'Work Sans', sans-serif;
+  color:white;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 2em;
+  margin:auto;
+  cursor: pointer;
+  text-align: center;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -25,6 +67,65 @@ code {
 .typewriterWrapper{
   color:#ffb80b;
 }
+.fade-in {
+	-webkit-animation: fade-in 1.5s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
+	        animation: fade-in 1.5s cubic-bezier(0.895, 0.030, 0.685, 0.220) both;
+}
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in-bottom {
+	-webkit-animation: fade-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: fade-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes blink-1 {
   0%,
   50%,

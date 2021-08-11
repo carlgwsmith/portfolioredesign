@@ -1,10 +1,13 @@
 import React from 'react';
+import Form from '../Components/Contact/Form';
+import {ContactContainer, SideA, SideB} from '../Components/Contact/ContactElements'
 
 const Contact = () => {
   return (
-    <div>
-      Contact
-    </div>
+    <ContactContainer className="fade-in-bottom">
+     <SideA></SideA>
+     <SideB><Form/></SideB>
+    </ContactContainer>
   );
 }
 

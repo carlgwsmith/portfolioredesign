@@ -1,12 +1,16 @@
 import React from 'react';
-import {ResumeContainer, SideA, SideB} from '../Components/Resume/ResumeElements'
+import {ResumeContainer, SideA, SideB, About} from '../Components/Resume/ResumeElements'
 import Education from '../Components/Resume/Education';
 import Skills from '../Components/Resume/Skills';
 import Experience from '../Components/Resume/Experience'
+import Info from '../Components/Resume/Info'
 
 const Resume = () => {
   return (
     <ResumeContainer>
+      <About>
+        <Info/>
+      </About>
       <SideA>
         <Education/>
         <Skills/>
