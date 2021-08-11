@@ -5,8 +5,7 @@ import {ContactContainer, SideA, SideB} from '../Components/Contact/ContactEleme
 const Contact = () => {
   return (
     <ContactContainer className="fade-in-bottom">
-     <SideA></SideA>
-     <SideB><Form/></SideB>
+     <SideA><Form/></SideA>
     </ContactContainer>
   );
 }
