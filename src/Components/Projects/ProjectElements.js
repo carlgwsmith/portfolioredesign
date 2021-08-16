@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const ResumeContainer = styled.div`
   display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
+  /* grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr;  */
   gap: 40px 40px;
   padding: 30px;
-  grid-template-areas: 
+  grid-template-areas:
+    "About About"
     "SideA1 SideB1"
     "SideA2 SideB2"; 
+`
+export const About = styled.div`
+grid-area: About;
+text-align:left;
 `
 export const SideA1 = styled.div`
 grid-area: SideA1;

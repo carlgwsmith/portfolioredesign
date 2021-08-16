@@ -6,8 +6,13 @@ grid-template-columns: 2fr;
 grid-template-rows: 2fr; 
 gap: 0px 0px;
 padding:30px;
-grid-template-areas: 
+grid-template-areas:
+  "About"
   "Side-A"; 
+`
+export const About = styled.div`
+grid-area: About;
+text-align:left;
 `
 export const SideA = styled.div`
 grid-area: Side-A;

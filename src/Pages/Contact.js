@@ -1,10 +1,12 @@
 import React from 'react';
 import Form from '../Components/Contact/Form';
-import {ContactContainer, SideA, SideB} from '../Components/Contact/ContactElements'
+import {ContactContainer, SideA, About, SideB} from '../Components/Contact/ContactElements'
 
 const Contact = () => {
   return (
-    <ContactContainer className="fade-in-bottom">
+    <ContactContainer>
+      <About><h1 style={{margin:"0px"}}>Contact Carl</h1>
+      </About>
      <SideA><Form/></SideA>
      <SideB></SideB>
     </ContactContainer>
