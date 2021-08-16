@@ -41,6 +41,7 @@ overflow: hidden;
 transition: all 0.2s ease-out-in;
 &:hover {
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 &:hover ${ProjTitle}{
   transition: all 0.2s ease-in-out;
