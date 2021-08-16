@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBrand, NavLink, Nav, Bars, NavMenu, NavBtn, NavBtnLink } from './NavElements';
+import { NavBrand, NavLink, Nav, Bars, NavMenu } from './NavElements';
 
 const CustomNav = ({ toggle }) => {
   return (

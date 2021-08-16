@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <ContactContainer className="fade-in-bottom">
      <SideA><Form/></SideA>
+     <SideB></SideB>
     </ContactContainer>
   );
 }

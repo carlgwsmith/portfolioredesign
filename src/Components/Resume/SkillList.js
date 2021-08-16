@@ -5,7 +5,7 @@ import {BiChevronRight} from 'react-icons/bi'
 const SkillList = (props) => {
   const skills = props.skills
   const listItems = skills.map((skill) =>
-  <SItem><BiChevronRight/> {skill}</SItem>
+  <SItem key={skill}><BiChevronRight/> {skill}</SItem>
 );
 
   return (

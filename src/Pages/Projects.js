@@ -1,7 +1,7 @@
 import React from 'react';
 import { ResumeContainer, SideA1, SideA2, SideB1, SideB2 } from '../Components/Projects/ProjectElements';
 import Card from '../Components/Projects/ProjectCard'
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'
 
 const Projects = () => {
 
