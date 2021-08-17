@@ -10,6 +10,7 @@ import ISCaseStudy from './Components/Projects/IncomeSolver/ISCaseStudy';
 import FMCaseStudy from './Components/Projects/FOMOMachine/FMCaseStudy';
 import CCCaseStudy from './Components/Projects/CryptoCompare/CCCaseStudy';
 import RCCaseStudy from './Components/Projects/RetirementCalc/RCCaseStudy';
+import 'react-image-lightbox/style.css';
 import './App.css';
 
 function App() {
