@@ -11,6 +11,8 @@ const GettingStarted = () => {
     borderRadius:"20px",
     border:"5px solid #f3f3f3",
     boxShadow: "4px 6px 6px #094c90",
+    width:"60%",
+    marginBottom:"25px",
     cursor:"pointer"
   }
 
