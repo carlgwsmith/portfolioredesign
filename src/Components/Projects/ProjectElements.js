@@ -146,7 +146,7 @@ padding:30px;
 `
 
 export const GSpara = styled.p`
-width: 60%;
+width: 65%;
 margin-left: auto;
 font-size:1.1em;
 font-weight: 400;
