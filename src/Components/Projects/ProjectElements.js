@@ -25,7 +25,7 @@ export const VisResumeContainer = styled.div`
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr; 
+  grid-template-rows: .2fr .1fr .5fr .5fr .5fr .6fr .2fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -34,11 +34,12 @@ export const ProjectOverview = styled.div`
     "GS GS"
     "Accounts Accounts"
     "Help Help"
+    "UI UI"
     "Models Models";
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .15fr .3fr .4fr .5fr .4fr .5fr; 
+  grid-template-rows: .3fr .15fr .3fr .4fr .5fr .4fr .5fr .5fr; 
   grid-template-areas: 
     "Header"
     "Vision"
@@ -46,12 +47,13 @@ export const ProjectOverview = styled.div`
     "GS"
     "Accounts"
     "Help"
+    "UI"
     "Models";
 } 
 `
 export const ProjDetailsContainer = styled.div`
   display: grid; 
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr .5fr; 
   grid-template-rows: 1fr; 
   gap: 0px 0px;
   padding:0px;
@@ -60,7 +62,7 @@ export const ProjDetailsContainer = styled.div`
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .60fr 1fr; 
+  grid-template-rows: .2fr 1fr; 
   grid-template-areas: 
     "ProjImage"
     "ProjDetails";
@@ -69,7 +71,7 @@ export const ProjDetailsContainer = styled.div`
 export const SupportContainer = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
+  grid-template-rows: 1fr .5fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -78,7 +80,7 @@ export const SupportContainer = styled.div`
   
 @media screen and (max-width:900px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .4fr 1fr; 
+  grid-template-rows: .4fr .6fr; 
   grid-template-areas: 
     "ProjImage"
     "ProjDetails";
@@ -94,7 +96,7 @@ export const SupportContainer = styled.div`
 export const ModelsContainer = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .2fr 1fr; 
+  grid-template-rows: .2fr .5fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -116,6 +118,36 @@ export const ModelsContainer = styled.div`
     "ProjDetails";
 } 
 `
+export const StyleGuideContainer = styled.div`
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: .3fr .3fr; 
+  gap: 0px 0px;
+  padding:0px;
+  grid-template-areas: 
+    "ProjImage ProjImage"
+    "ProjDetails ProjDetails";
+  
+@media screen and (max-width:900px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .4fr .5fr; 
+  grid-template-areas: 
+    "ProjImage"
+    "ProjDetails";
+} 
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .20fr .8fr; 
+  grid-template-areas: 
+    "ProjImage"
+    "ProjDetails";
+} 
+`
+export const CtaImg = styled.img`
+width:100%;
+margin-left:auto;
+margin-right:auto;
+`
 export const Vision = styled.div`
 grid-area: Vision;
 text-align:left;
@@ -135,6 +167,8 @@ text-align:center;
 padding-left:20px;
 padding:30px;
 background-color:grey;
+background-image: url(${props => props.img});
+background-position: center;
 `
 export const GS = styled.div`
 grid-area: GS;
@@ -158,7 +192,7 @@ export const Accounts = styled.div`
 grid-area: Accounts;
 text-align:left;
 padding-left:20px;
-background-color:#f8f8f8;
+background-color:#fff;
 padding:30px;
 `
 export const Help = styled.div`
@@ -168,11 +202,18 @@ padding-left:20px;
 background-color:#f8f8f8;
 padding:30px;
 `
+export const CustomStyle = styled.div`
+grid-area: UI;
+text-align:left;
+padding-left:20px;
+background-color:#ffffff;
+padding:30px;
+`
 export const Models = styled.div`
 grid-area: Models;
 text-align:left;
 padding-left:20px;
-background-color:#f8f8f8;
+background-color:#f3f3f3;
 padding:30px;
 `
 export const ProjImage = styled.div`
