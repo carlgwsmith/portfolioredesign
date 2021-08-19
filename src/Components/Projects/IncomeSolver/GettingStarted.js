@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
-import {GSpara} from '../ProjectElements'
+import {GSpara} from './ISelements'
 
 const GettingStarted = () => {
   const images = [

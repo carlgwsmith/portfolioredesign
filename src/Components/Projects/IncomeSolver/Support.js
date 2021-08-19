@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProjImage, ProjDetails, SupportContainer } from '../ProjectElements';
+import {ProjImage, ProjDetails, SupportContainer } from './ISelements';
 const AddAccounts = () => {
   const mockup = {
     width: "100%",

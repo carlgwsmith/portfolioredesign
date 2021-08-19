@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProjImage, ProjDetails, StyleGuideContainer } from '../ProjectElements';
+import {ProjImage, ProjDetails, StyleGuideContainer } from './ISelements';
 const CustomModels = () => {
   const mockup = {
     width: "100%",

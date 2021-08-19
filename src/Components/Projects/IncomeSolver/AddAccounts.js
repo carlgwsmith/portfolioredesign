@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProjImage, ProjDetails, ProjDetailsContainer, CtaImg } from '../ProjectElements';
+import {ProjImage, ProjDetails, ProjDetailsContainer, CtaImg } from './ISelements';
 const AddAccounts = () => {
   const h2special = {
     margin: "10px 0 0 0",

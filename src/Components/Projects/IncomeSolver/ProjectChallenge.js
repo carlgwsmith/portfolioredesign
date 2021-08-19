@@ -1,5 +1,5 @@
 import React from 'react';
-import { OLCustom, LiCustom } from '../ProjectElements';
+import { OLCustom, LiCustom } from './ISelements';
 
 const ProjectChallenge = () => {
   return (
