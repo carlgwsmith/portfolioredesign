@@ -2,8 +2,8 @@ import React from 'react';
 import {ProjImage, ProjDetails, StyleGuideContainer } from './ISelements';
 const CustomModels = () => {
   const mockup = {
-    width: "100%",
-    marginLeft:"auto",
+    width: "80%",
+    marginLeft:"10%",
     marginRight:"auto"
   }
   const h2special = {
