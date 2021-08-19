@@ -25,7 +25,7 @@ export const VisResumeContainer = styled.div`
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .2fr .1fr .5fr .5fr .5fr .6fr .2fr; 
+  grid-template-rows: .25fr .1fr .5fr .5fr .5fr .6fr .2fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -155,5 +155,30 @@ transition: all 0.2s ease-out-in;
 &:hover ${ProjTitle}{
   transition: all 0.2s ease-in-out;
   color: white;
+}
+`
+export const Button = styled.a`
+text-decoration:none;
+border-radius:30px;
+margin-bottom:30px;
+font-family: 'Work Sans', sans-serif;
+background: ${({ primary }) => (primary ? '#d19709' : '#ffb80b')};
+white-space: nowrap;
+padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
+color: ${({ dark }) => (dark ? '#ffb80b' : '#383838')};
+font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+outline:none;
+border:3px solid #d19709;
+cursor: pointer;
+display:flex;
+justify-content: center;
+align-items: center;
+transition: all 0.2s ease-in-out;
+
+&:hover {
+  transition: all 0.2s ease-in-out;
+  background: ${({ primary }) => (primary ? '#fff' : '#f2f2f2')};
+  color:#383838;
+  border:3px solid #ffb80b;
 }
 `
