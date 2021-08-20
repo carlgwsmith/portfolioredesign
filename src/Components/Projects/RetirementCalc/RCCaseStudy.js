@@ -1,9 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { ProjectOverview, Header} from './RCElements';
+import { Button } from '../ProjectElements';
+import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 
 const RCCaseStudy = () => {
+  const [hover, setHover] = useState(false)
+
+  const onHover = () => {
+    setHover(!hover)
+  }
+  const projName = {
+    fontSize: "4em",
+    marginTop:"1em",
+    color:"#fff"
+  }
   return (
     <div>
-      <h1>Retirement Calculator</h1>
+      <ProjectOverview>
+        <Header>
+        <h1 style={projName}>Retirement Calculator</h1>
+          <HeroBtnWrapper>
+            <Button href="https://carlgwsmith.github.io/retirementcalc" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
+            See Project {hover ? <ArrowForward/> : <ArrowRight/>}
+          </Button>
+          </HeroBtnWrapper>
+        </Header>
+      </ProjectOverview>
+      <h1>FOMOMachine</h1>
     </div>
   );
 }
