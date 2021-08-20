@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const ResumeContainer = styled.div `
 display: grid; 
-grid-template-columns: 2fr 2fr; 
+grid-template-columns: 2fr 1.5fr 2fr; 
 /* grid-template-rows: 2fr 2fr;  */
-gap: 0px 0px;
+gap: 0px 40px;
 padding:20px 40px;
 grid-template-areas:
-  "About About"
-  "Side-A Side-B"
-  "Side-A Side-B"
-  "Side-A Side-B";
+  "About About About"
+  "Side-A Side-B Side-C"
+  "Side-A Side-B Side-C"
+  "Side-A Side-B Side-C";
   
 @media screen and (max-width:480px){
   grid-template-columns: 2fr; 
@@ -18,7 +18,8 @@ grid-template-areas:
   grid-template-areas:
   "About"
   "Side-A"
-  "Side-B"; 
+  "Side-B"
+  "Side-C"; 
 }
 `
 export const About = styled.div`
@@ -42,9 +43,28 @@ export const SideB = styled.div`
 grid-area: Side-B;
 text-align:left;
 `
+export const SideC = styled.div`
+grid-area: Side-C;
+text-align:left;
+`
 export const ResumeHeader = styled.h2`
-font-family: 'Work Sans';
+font-family: 'Work Sans', sans-serif;
 color: #383838;
+/* border-bottom: 1px solid; */
+/* width:100%; */
+letter-spacing: .1em;
+font-weight: 600;
+text-transform: uppercase;
+display: inline-block;
+vertical-align: middle;
+margin:10px 0;
+`
+export const ResumeH1 = styled.h1`
+font-family: 'Helvetica', sans-serif;
+font-size:5em;
+-webkit-text-stroke:1px grey;
+/* background-color:white; */
+color: #fff;
 /* border-bottom: 1px solid; */
 /* width:100%; */
 letter-spacing: .1em;
@@ -74,7 +94,7 @@ margin-top:4px;
 font-family:'Work Sans', sans-serif;
 font-size:.8em;
 font-weight:600;
-color:#a3a3a3;
+color:#4a5460;
 `
 
 export const SkillHead = styled.p`

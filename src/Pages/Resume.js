@@ -1,5 +1,5 @@
 import React from 'react';
-import {ResumeContainer, SideA, SideB, About} from '../Components/Resume/ResumeElements'
+import {ResumeContainer, SideA, SideB, SideC, About} from '../Components/Resume/ResumeElements'
 import Education from '../Components/Resume/Education';
 import Skills from '../Components/Resume/Skills';
 import Experience from '../Components/Resume/Experience'
@@ -12,10 +12,14 @@ const Resume = () => {
         <Info/>
       </About>
       <SideA>
-        <Education/>
-        <Skills/>
+      <Experience/>
       </SideA>
-      <SideB><Experience/></SideB>
+      <SideB>
+      <Education/>
+        </SideB>
+      <SideC>
+      <Skills/>
+      </SideC>
     </ResumeContainer>
   );
 }

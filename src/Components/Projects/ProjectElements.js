@@ -114,6 +114,19 @@ grid-area: About;
 text-align:left;
 padding-left:20px;
 border-bottom:2px solid #f4f4f4;
+font-family: 'Helvetica', sans-serif;
+font-size:2em;
+-webkit-text-stroke:1px grey;
+/* background-color:white; */
+color: #fff;
+/* border-bottom: 1px solid; */
+/* width:100%; */
+letter-spacing: .1em;
+font-weight: 600;
+text-transform: uppercase;
+display: inline-block;
+vertical-align: middle;
+margin:10px 0;
 `
 export const SideA1 = styled.div`
 grid-area: SideA1;
@@ -140,7 +153,7 @@ export const ProjCard = styled.div`
 height: 300px;
 position:relative;
 border-radius:20px;
-background-size: cover !important;
+background-size:  !important;
 background-position: center !important;
 border: 5px solid #f4f4f4;
 background-repeat: no-repeat !important;
@@ -157,6 +170,7 @@ transition: all 0.2s ease-out-in;
   color: white;
 }
 `
+
 export const Button = styled.a`
 text-decoration:none;
 border-radius:30px;

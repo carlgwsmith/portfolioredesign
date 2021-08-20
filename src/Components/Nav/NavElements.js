@@ -7,7 +7,7 @@ background: #fff;
 height:70px;
 display:flex;
 justify-content:space-between;
-padding: 0.5rem calc((100vw - 1000px) / 2);
+padding: 0.5rem calc((100vw - 2000px) / 2);
 z-index:10;
 border-bottom:2px solid #f3f3f3;
 `

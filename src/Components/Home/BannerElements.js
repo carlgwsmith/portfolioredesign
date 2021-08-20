@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import {FaBehanceSquare, FaDribbbleSquare, FaLinkedin} from 'react-icons/fa'
 
 export const HeroContainer = styled.div`
 background:#fff;
@@ -45,6 +46,35 @@ display:flex;
 flex-direction: column;
 align-items: center;
 `
+export const HeroSocial = styled.div`
+padding:20px
+`
+
+export const Behance = styled(FaBehanceSquare)`
+font-size:32px;
+color:#535353;
+transition: all 0.2s ease-in-out;
+&:hover{
+  color:#ffb80b;
+}
+`
+export const Dribble = styled(FaDribbbleSquare)`
+font-size:32px;
+color:#535353;
+transition: all 0.2s ease-in-out;
+&:hover{
+  color:#ffb80b;
+}
+`
+export const Linkedin = styled(FaLinkedin)`
+font-size:32px;
+color:#535353;
+transition: all 0.2s ease-in-out;
+&:hover{
+  color:#ffb80b;
+}
+`
+
 export const ArrowForward = styled(MdArrowForward)`
 margin-left:8px;
 font-size:20px;

@@ -21,6 +21,7 @@ function handleClick() {
 useEffect(() => {
   setProjUrl(props.url)
 }, [props.url]);
+
   return (
     <ProjCard style={{background: hover ? "linear-gradient(rgba("+props.rgb+", 0.6), rgba("+ props.rgb +", 0.6)),url(" + props.image + ")" : "url(" + props.image + ")"}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
      <ProjTitle>
