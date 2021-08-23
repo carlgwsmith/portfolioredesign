@@ -1,6 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Lightbox from 'react-image-lightbox';
 import {ProjImage, ProjDetails, StyleGuideContainer } from './ISelements';
+
 const CustomModels = () => {
+  const [isOpen, setOpen] = useState(false)
+  const [photoIndex, setPhotoIndex] = useState(0)
+  const images = [
+    "/images/styleguide.png"
+  ];
   const mockup = {
     width: "80%",
     marginLeft:"10%",
@@ -21,7 +28,13 @@ const CustomModels = () => {
       <h2 style={h2special}>Challenge 3: Custom Styling</h2>
       <StyleGuideContainer>
       <ProjImage>
-        <img src={process.env.PUBLIC_URL + '/images/styleguide.png'} alt="on boarding comparison" style={mockup}></img>
+        <img src={process.env.PUBLIC_URL + '/images/styleguide.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
+        {isOpen && (
+      <Lightbox
+        mainSrc={images[photoIndex]}
+        onCloseRequest={() => setOpen(false)}
+      />
+    )}
         </ProjImage>
         <ProjDetails>
           <p style={detail}>Model portfolios are a collection of various holdings that are grouped together and <em>modeled</em> by their risk level. Example: "This group of 10 holdings together equals a risk level of conservative".</p>

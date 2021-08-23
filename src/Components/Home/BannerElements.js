@@ -13,7 +13,7 @@ justify-content: center;
 z-index:1;
 
 @media screen and (max-width:700px){
-padding-top:40px;
+margin-top:40px;
 }
 `;
 
@@ -39,6 +39,9 @@ border: 4px solid #fff;
 box-shadow: 5px 5px 9px 0 rgb(0 0 0 / 15%), -5px -5px 9px 0 rgb(255 255 255 / 13%);
 border-radius: 80px;
 transition: all 0.2s ease-in-out;
+@media screen and (max-width:700px){
+margin-top:40px;
+}
 `
 export const HeroBtnWrapper = styled.div`
 margin-top:32px;
@@ -47,7 +50,19 @@ flex-direction: column;
 align-items: center;
 `
 export const HeroSocial = styled.div`
-padding:20px
+padding:20px;
+`
+export const HeroContent = styled.div`
+z-index:3;
+max-width:1200px;
+position:absolute;
+padding:8px 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+@media screen and (max-width:600px){
+margin-top:60px;
+}
 `
 
 export const Behance = styled(FaBehanceSquare)`
@@ -83,13 +98,4 @@ font-size:20px;
 export const ArrowRight = styled(MdKeyboardArrowRight)`
 margin-left:8px;
 font-size:20px;
-`
-export const HeroContent = styled.div`
-z-index:3;
-max-width:1200px;
-position:absolute;
-padding:8px 25px;
-display: flex;
-flex-direction: column;
-align-items: center;
 `

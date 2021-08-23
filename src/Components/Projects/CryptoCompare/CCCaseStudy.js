@@ -4,7 +4,8 @@ import ProjectVision from './ProjectVision';
 import GettingStarted from './GettingStarted';
 import Dash from './Dash';
 import CoinView from './CoinView';
-import { ProjectOverview, Header, Vision, Challenge, GS, Dashboard, View} from './CCelements';
+import Comparison from './Compare'
+import { ProjectOverview, Header, Vision, Challenge, GS, Dashboard, View, Compare} from './CCelements';
 import { Button } from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 
@@ -19,10 +20,11 @@ const CCCaseStudy = () => {
     marginTop:"1em",
     color:"#fff"
   }
+  const imageUrl = process.env.PUBLIC_URL + '/images/isheaderbg.jpg'
   return (
     <div>
       <ProjectOverview>
-        <Header>
+        <Header img={imageUrl}>
           <h1 style={projName}>CryptoCompare</h1>
           <HeroBtnWrapper>
           <Button href="https://carlgwsmith.github.io/crypto-compare" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
@@ -45,6 +47,9 @@ const CCCaseStudy = () => {
         <View>
           <CoinView/>
         </View>
+        <Compare>
+          <Comparison/>
+        </Compare>
       </ProjectOverview>
     </div>
   );

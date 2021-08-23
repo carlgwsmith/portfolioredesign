@@ -1,6 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Lightbox from 'react-image-lightbox';
 import {ProjImage, ProjDetails, SupportContainer } from './ISelements';
 const AddAccounts = () => {
+  const [isOpen, setOpen] = useState(false)
+  const [photoIndex, setPhotoIndex] = useState(0)
+  const images = [
+    "/images/HelpMocks.png"
+  ];
   const mockup = {
     width: "100%",
     marginLeft:"auto",
@@ -22,7 +28,13 @@ const AddAccounts = () => {
       <h2 style={h2special}>Challenge 2: Contextual Support </h2>
       <SupportContainer>
       <ProjImage>
-        <img src={process.env.PUBLIC_URL + '/images/HelpMocks.png'} alt="on boarding comparison" style={mockup}></img>
+        <img src={process.env.PUBLIC_URL + '/images/HelpMocks.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
+        {isOpen && (
+      <Lightbox
+        mainSrc={images[photoIndex]}
+        onCloseRequest={() => setOpen(false)}
+      />
+    )}
         </ProjImage>
         <ProjDetails>
           <p style={detail}>Financial planning concepts are not always easy to to understand and software can often be unhelpful when it assumes too much of the user. Making support available can often save users headaches and companies money. </p>
