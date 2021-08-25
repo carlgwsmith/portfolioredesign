@@ -62,6 +62,9 @@ padding:30px;
 background-color:grey;
 background-image: url(${props => props.img});
 background-position: center;
+background-size:cover;
+border-bottom:5px solid #415b66;
+box-shadow:2px 8px 20px #afafaf94;;
 `
 export const GS = styled.div`
 grid-area: GS;

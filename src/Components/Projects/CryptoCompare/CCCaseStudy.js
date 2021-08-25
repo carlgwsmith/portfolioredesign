@@ -18,9 +18,9 @@ const CCCaseStudy = () => {
   const projName = {
     fontSize: "4em",
     marginTop:"1em",
-    color:"#fff"
+    color:"#415b66"
   }
-  const imageUrl = process.env.PUBLIC_URL + '/images/isheaderbg.jpg'
+  const imageUrl = process.env.PUBLIC_URL + '/images/ccheaderlitebg.jpg'
   return (
     <div>
       <ProjectOverview>

@@ -35,9 +35,9 @@ const GettingStarted = () => {
         </ProjImage>
         <ProjDetails>
           <p style={detailBig}>CryptoCompare utilizes:</p>
-          <p style={detail}><FaReact color="#4e9bff" size="2em"/> the React framework for reuseable JavaScript components</p>
-          <p style={detail}><SiFirebase color="orange" size="2em"/> Authentication and live database powered by Google's Firebase</p>
-          <p style={detail}><SiStyledComponents color="#fb8ee3" size="2em"/> Custom stylized components using the Styled Components plugin.</p>
+          <p style={detail}><FaReact color="#4e9bff" size="1em"/> the React framework for reuseable JavaScript components</p>
+          <p style={detail}><SiFirebase color="orange" size="1em"/> Authentication and live database powered by Google's Firebase</p>
+          <p style={detail}><SiStyledComponents color="#fb8ee3" size="1em"/> Custom stylized components using the Styled Components plugin.</p>
         </ProjDetails>
       </GSContainer>
     </div>

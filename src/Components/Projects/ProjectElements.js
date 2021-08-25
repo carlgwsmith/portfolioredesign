@@ -2,14 +2,23 @@ import styled from "styled-components";
 
 export const ResumeContainer = styled.div`
   display: grid; 
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
   /* grid-template-rows: 1fr 1fr;  */
-  gap: 40px 40px;
+  gap: 20px 20px;
   padding: 30px;
   grid-template-areas:
-    "About About"
-    "SideA1 SideB1"
-    "SideA2 SideB2"; 
+    "About About About About"
+    "SideA1 SideB1 SideA2 SideB2"; 
+    @media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .6fr 1fr 1fr 1fr 1fr; 
+  grid-template-areas: 
+    "About"
+    "SideA1"
+    "SideB1"
+    "SideA2"
+    "SideB2";
+} 
 `
 export const VisResumeContainer = styled.div`
   display: grid; 
@@ -72,6 +81,8 @@ padding:30px;
 background-color:grey;
 background-image: url(${props => props.img});
 background-position: center;
+border-bottom: 5px solid #68aff6;
+box-shadow: 2px 8px 20px #afafaf94;
 `
 export const GS = styled.div`
 grid-area: GS;
@@ -152,10 +163,10 @@ color:transparent;
 export const ProjCard = styled.div`
 height: 300px;
 position:relative;
-border-radius:20px;
-background-size:  !important;
+/* border-radius:20px; */
+background-size: 400px  !important;
 background-position: center !important;
-border: 5px solid #f4f4f4;
+border:5px solid #f4f4f4;
 background-repeat: no-repeat !important;
 background: black;
 /* box-shadow: 4px 6px 12px #d8d8d8; */
@@ -164,6 +175,7 @@ transition: all 0.2s ease-out-in;
 &:hover {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  border: 5px solid #ffb80b;
 }
 &:hover ${ProjTitle}{
   transition: all 0.2s ease-in-out;
