@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: .55fr 1fr; 
+  grid-template-rows: .4fr 1fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -59,3 +59,12 @@ padding:30px;
 // padding-left:20px;
 // padding:30px;
 // `
+
+export const Mock = styled.img`
+    width:400px;
+    float:left;
+    padding:20px;
+    @media screen and (max-width:600px){
+  width:100%;
+} 
+    `

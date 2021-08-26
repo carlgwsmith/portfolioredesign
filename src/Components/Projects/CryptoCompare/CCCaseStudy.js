@@ -25,7 +25,7 @@ const CCCaseStudy = () => {
     <div>
       <ProjectOverview>
         <Header img={imageUrl}>
-          <h1 style={projName}>CryptoCompare</h1>
+          <h1 style={projName}>Crypto Compare</h1>
           <HeroBtnWrapper>
           <Button href="https://carlgwsmith.github.io/crypto-compare" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
             See Project {hover ? <ArrowForward/> : <ArrowRight/>}

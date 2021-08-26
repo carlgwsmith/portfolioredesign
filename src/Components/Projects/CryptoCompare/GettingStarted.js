@@ -6,7 +6,7 @@ import {SiStyledComponents, SiFirebase} from "react-icons/si"
 
 const GettingStarted = () => {
   const mockup = {
-    width: "600px",
+    width: "100%",
     marginLeft:"auto",
     marginRight:"auto"
   }

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { ProjectOverview, Header, Vision, Tools} from './RCElements';
+import { ProjectOverview, Header, Vision, Tools, Mock} from './RCElements';
 import { Button } from '../ProjectElements';
 import {IoLogoVue} from 'react-icons/io5'
 import {SiVueDotJs, SiBootstrap} from 'react-icons/si'
@@ -29,11 +29,7 @@ const RCCaseStudy = () => {
     borderLeft: "1px solid",
     marginLeft: "15px"
   }
-  const mock = {
-    width:"400px",
-    float:"left",
-    padding:"20px"
-  }
+
   const imageUrl = process.env.PUBLIC_URL + '/images/headerRC.jpg'
   return (
     <div>
@@ -47,7 +43,7 @@ const RCCaseStudy = () => {
           </HeroBtnWrapper>
         </Header>
         <Vision>
-        <img src={process.env.PUBLIC_URL + '/images/Retirecalcmock.png'} style={mock}></img>
+        <Mock src={process.env.PUBLIC_URL + '/images/Retirecalcmock.png'} ></Mock>
           <p style={visionP}>Retirement Calculator is a practice in data visualization from input and state management with data. The goal was to, in a few easy steps, return some visually appealing marketable data.
           I chose to do with a wizard to ask simple retirement based questions. Upon completion of the form, I return several charts with pertinent information regarding their inputs.</p>
           <p style={visionP}>The return gives the user the feeling of customization and tailored response. This calculator could be used as a lead generation tool or as an educational piece.</p>

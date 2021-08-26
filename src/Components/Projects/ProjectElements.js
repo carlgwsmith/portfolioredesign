@@ -11,7 +11,8 @@ export const ResumeContainer = styled.div`
     "SideA1 SideB1 SideA2 SideB2"; 
     @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .6fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: .6fr 1fr 1fr 1fr 1fr;
+  padding: 15px;
   grid-template-areas: 
     "About"
     "SideA1"
@@ -20,16 +21,16 @@ export const ResumeContainer = styled.div`
     "SideB2";
 } 
 `
-export const VisResumeContainer = styled.div`
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 40px;
-  padding: 30px;
-  grid-template-areas:
-    "About"
-    "SideA1";
-`
+// export const VisResumeContainer = styled.div`
+//   display: grid; 
+//   grid-template-columns: 1fr; 
+//   grid-template-rows: 1fr; 
+//   gap: 40px;
+//   padding: 30px;
+//   grid-template-areas:
+//     "About"
+//     "SideA1";
+// `
 
 export const ProjectOverview = styled.div`
   display: grid; 
