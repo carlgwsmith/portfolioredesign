@@ -40,7 +40,7 @@ const FMCaseStudy = () => {
     <div>
       <ProjectOverview>
         <Header img={imageUrl}>
-        <h1 style={projName}>FOMOMachine</h1>
+        <h1 style={projName}>FOMO Machine</h1>
           <HeroBtnWrapper>
             <Button href="https://carlgwsmith.github.io/FOMOMachineVue" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
             See Project {hover ? <ArrowForward/> : <ArrowRight/>}
