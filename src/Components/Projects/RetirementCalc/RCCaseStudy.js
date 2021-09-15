@@ -30,7 +30,7 @@ const RCCaseStudy = () => {
     marginLeft: "15px"
   }
 
-  const imageUrl = process.env.PUBLIC_URL + '/images/headerRC.jpg'
+  const imageUrl = process.env.PUBLIC_URL + '/images/HeaderRC.jpg'
   return (
     <div>
       <ProjectOverview>

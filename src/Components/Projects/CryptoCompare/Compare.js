@@ -1,6 +1,6 @@
 import React from 'react';
 import Lightbox from 'react-image-lightbox';
-import {ProjImage, ProjDetails, CompareContainer } from './CCelements';
+import {ProjImage,Detail,  ProjDetails, CompareContainer } from './CCelements';
 
 const Compare = () => {
   const mockup = {
@@ -27,9 +27,9 @@ const Compare = () => {
         <img src={process.env.PUBLIC_URL + '/images/COMPARE_cccompare.png'} alt="crypto compare dashboard" style={mockup}></img>
         </ProjImage>
         <ProjDetails>
-        <p style={detail}>After adding currency to the portfolio from Single Coin View we want to give users a place to compare the performance of each coin against each other.</p>
-          <p style={detail}>Plotting the current price across a line graph with it's corresponding color makes it easy to pick out individual coins.</p>
-          <p style={detail}>Coins can be elimated from the portfolio by pressing "delete" next to the coin in the coin list or the user can view more coin details by pressing "view".</p>
+        <Detail>After adding currency to the portfolio from Single Coin View we want to give users a place to compare the performance of each coin against each other.</Detail>
+          <Detail>Plotting the current price across a line graph with it's corresponding color makes it easy to pick out individual coins.</Detail>
+          <Detail>Coins can be elimated from the portfolio by pressing "delete" next to the coin in the coin list or the user can view more coin details by pressing "view".</Detail>
         </ProjDetails>
       </CompareContainer>
     </div>

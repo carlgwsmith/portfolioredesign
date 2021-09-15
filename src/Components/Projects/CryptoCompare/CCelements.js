@@ -10,6 +10,16 @@ grid-area: ProjDetails;
 text-align:left;
 padding:20px;
 padding:30px;
+
+`
+export const Detail = styled.p`
+font-size:1.5em;
+line-height:1.5;
+margin-top:0;
+color:"#3d3d3d";
+@media screen and (max-width:600px){
+  font-size:1em !important;
+} 
 `
 
 export const ProjectOverview = styled.div`
@@ -84,8 +94,7 @@ export const View = styled.div`
 grid-area: View;
 text-align:left;
 padding:20px;
-background-color:#097cfe;
-color:#fff;
+background-color:#f5f8ff;
 padding:30px;
 `
 

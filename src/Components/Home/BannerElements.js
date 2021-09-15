@@ -13,7 +13,6 @@ justify-content: center;
 z-index:1;
 
 @media screen and (max-width:700px){
-margin-top:40px;
 }
 `;
 
@@ -23,6 +22,9 @@ font-size:2.5rem;
 font-weight:500;
 text-align:center;
 color:#383838;
+@media screen and (max-width:600px){
+ font-size:1.4rem;
+} 
 `
 export const HeroSpan = styled.span`
 font-family:'Work Sans', sans-serif;
@@ -31,16 +33,31 @@ font-weight:500;
 text-align:center;
 font-style: italic;
 color:#383838;
+@media screen and (max-width:600px){
+ font-size:1.4rem;
+} 
 `
+export const Name = styled.h1`
+  font-weight: 600;
+  font-size: 3em;
+  -webkit-text-stroke: 1px grey;
+  color: #fff;
+  font-family: 'Helvetica',sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-transform:uppercase;
+`
+
 
 export const HeroImg = styled.img`
 height: 120px;
 border: 4px solid #fff;
 box-shadow: 5px 5px 9px 0 rgb(0 0 0 / 15%), -5px -5px 9px 0 rgb(255 255 255 / 13%);
 border-radius: 80px;
+margin-top:60px;
 transition: all 0.2s ease-in-out;
 @media screen and (max-width:700px){
-margin-top:40px;
+margin-top:30px;
 }
 `
 export const HeroBtnWrapper = styled.div`

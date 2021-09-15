@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
-import {ProjImage, ProjDetails, DashContainer } from './CCelements';
+import {ProjImage, Detail, ProjDetails, DashContainer } from './CCelements';
 const Dash = () => {
   const mockup = {
     width: "100%",
@@ -26,9 +26,9 @@ const Dash = () => {
         <img src={process.env.PUBLIC_URL + '/images/COMPARE_ccdash.png'} alt="crypto compare dashboard" style={mockup}></img>
         </ProjImage>
         <ProjDetails>
-          <p style={detail}>The dashboard is essentially the homepage for a logged in user.</p>
-          <p style={detail}>The user will be able to find up-to-date information on what popular coins are doing. The user will also be able to find today's movers and losers, the latest market statistics, and the latest cryptocurrency news.</p>
-          <p style={detail}>Most importantly, the dashboard functions as the main search area for researching coins.</p>
+          <Detail>The dashboard is essentially the homepage for a logged in user.</Detail>
+          <Detail>The user will be able to find up-to-date information on what popular coins are doing. The user will also be able to find today's movers and losers, the latest market statistics, and the latest cryptocurrency news.</Detail>
+          <Detail>Most importantly, the dashboard functions as the main search area for researching coins.</Detail>
         </ProjDetails>
       </DashContainer>
     </div>
