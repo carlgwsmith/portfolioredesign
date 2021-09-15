@@ -88,6 +88,17 @@ code {
 	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+.gsImg {
+  border-radius:10px;
+    border:3px solid #f3f3f3;
+    box-shadow: 4px 6px 6px #094c90;
+    width:60%;
+    margin-bottom:25px;
+    cursor:pointer;
+    @media screen and (max-width:600px){
+      width:80% !important;
+    }
+}
 /**
  * ----------------------------------------
  * animation fade-in

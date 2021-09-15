@@ -25,6 +25,7 @@ grid-template-areas:
 export const About = styled.div`
 grid-area: About;
 text-align:left;
+
 `
 export const AboutMe = styled.p`
 font-family:'Work sans', sans-serif;
@@ -73,6 +74,9 @@ text-transform: uppercase;
 display: inline-block;
 vertical-align: middle;
 margin:10px 0;
+@media screen and (max-width:600px){
+font-size:3em;
+}
 `
 export const SchoolName = styled.p`
 font-size:1.2em;

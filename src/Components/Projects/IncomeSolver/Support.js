@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
-import {ProjImage, ProjDetails, SupportContainer } from './ISelements';
+import {ProjImage, Detail, ProjDetails, SupportContainer } from './ISelements';
 const AddAccounts = () => {
   const [isOpen, setOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
@@ -37,8 +37,8 @@ const AddAccounts = () => {
     )}
         </ProjImage>
         <ProjDetails>
-          <p style={detail}>Financial planning concepts are not always easy to to understand and software can often be unhelpful when it assumes too much of the user. Making support available can often save users headaches and companies money. </p>
-          <p style={detail}>Along a users journey through the software they may find themselves stuck. We developed a floating sidebar for contextual help that is specific to the current feature the user is actively on. If they require more assistance than they may visit the knowledge base where they can have access to specific higher level topics or get help from a real person.</p>
+          <Detail>Financial planning concepts are not always easy to to understand and software can often be unhelpful when it assumes too much of the user. Making support available can often save users headaches and companies money. </Detail>
+          <Detail>Along a users journey through the software they may find themselves stuck. We developed a floating sidebar for contextual help that is specific to the current feature the user is actively on. If they require more assistance than they may visit the knowledge base where they can have access to specific higher level topics or get help from a real person.</Detail>
         </ProjDetails>
       </SupportContainer>
     </div>

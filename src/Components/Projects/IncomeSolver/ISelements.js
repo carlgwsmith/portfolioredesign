@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const ProjDetailsContainer = styled.div`
   display: grid; 
-  grid-template-columns: 1fr .5fr; 
-  grid-template-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: .7fr .7fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
-    "ProjImage ProjDetails";
+    "ProjImage"
+    "ProjDetails";
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
@@ -22,6 +23,15 @@ width:100%;
 margin-left:auto;
 margin-right:auto;
 `
+export const Detail = styled.p`
+font-size:1.5em;
+line-height:1.5;
+margin-top:0;
+color:"#3d3d3d";
+@media screen and (max-width:600px){
+  font-size:1em !important;
+}`
+
 export const ProjImage = styled.div`
 grid-area: ProjImage;
 text-align:left;
@@ -117,7 +127,9 @@ font-weight: 400;
 margin-right: auto;
 padding-bottom:10px;
 line-height: 1.4;
-`
+@media screen and (max-width:600px){
+  width:90% !important;
+}`
 export const OLCustom = styled.ol`
 list-style-type: none;
 margin-left: 0;

@@ -139,6 +139,9 @@ text-transform: uppercase;
 display: inline-block;
 vertical-align: middle;
 margin:10px 0;
+@media screen and (max-width:600px){
+padding-left:10px;
+}
 `
 export const SideA1 = styled.div`
 grid-area: SideA1;

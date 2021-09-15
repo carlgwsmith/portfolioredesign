@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
-import {ProjImage, ProjDetails, ModelsContainer } from './ISelements';
+import {ProjImage, Detail, ProjDetails, ModelsContainer } from './ISelements';
 const CustomModels = () => {
   const [isOpen, setOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
@@ -36,8 +36,8 @@ const CustomModels = () => {
     )}
         </ProjImage>
         <ProjDetails>
-          <p style={detail}>Model portfolios are a collection of various holdings that are grouped together and <em>modeled</em> by their risk level. Example: "This group of 10 holdings together equals a risk level of conservative".</p>
-          <p style={detail}>Many financial advisors use model portfolios from large investment firms, or sometimes they create their own. Model portfolio complexity can get very tedious as advisors often create portfolios to change allocation over time. For example when you get older your risk tolerance becomes more conservative so you would ideally want your investment portfolio to change to conservative.</p>
+          <Detail>Model portfolios are a collection of various holdings that are grouped together and <em>modeled</em> by their risk level. Example: "This group of 10 holdings together equals a risk level of conservative".</Detail>
+          <Detail>Many financial advisors use model portfolios from large investment firms, or sometimes they create their own. Model portfolio complexity can get very tedious as advisors often create portfolios to change allocation over time. For example when you get older your risk tolerance becomes more conservative so you would ideally want your investment portfolio to change to conservative.</Detail>
         </ProjDetails>
       </ModelsContainer>
     </div>
