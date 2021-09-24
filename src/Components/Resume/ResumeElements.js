@@ -47,7 +47,7 @@ grid-template-areas:
 
 @media screen and (max-width:520px){
   grid-template-columns: 2fr; 
-  grid-template-rows: .5fr .7fr .65fr .55fr .65fr;
+  grid-template-rows: .5fr .3fr .65fr .55fr .65fr;
   grid-template-areas:
   "About"
   "AboutImg"
