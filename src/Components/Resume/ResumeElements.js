@@ -1,22 +1,56 @@
 import styled from "styled-components";
 
+export const Box = styled.div`
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #28a92b;
+  font-weight: 600;
+  color: #fff;
+`
+
 export const ResumeContainer = styled.div `
 display: grid; 
 grid-template-columns: 2fr 1.5fr 2fr; 
-/* grid-template-rows: 2fr 2fr;  */
+grid-template-rows: 1fr 2fr; 
 gap: 0px 40px;
 padding:20px 40px;
 grid-template-areas:
-  "About About About"
+  "About About AboutImg"
   "Side-A Side-B Side-C"
   "Side-A Side-B Side-C"
   "Side-A Side-B Side-C";
   
-@media screen and (max-width:480px){
+  @media screen and (max-width:1100px){
+    grid-template-columns: 1fr .5fr; 
+    grid-template-rows: .2fr .7fr 1fr .7fr 1fr;
+    grid-template-areas:
+    "About AboutImg"
+    "Side-A Side-A"
+    "Side-B Side-B"
+    "Side-C Side-C"; 
+  }
+  @media screen and (max-width:1000px){
+    grid-template-columns: 1fr; 
+    grid-template-rows: .2fr 1fr 1fr .7fr ;
+    grid-template-areas:
+    "About"
+    "AboutImg"
+    "Side-A"
+    "Side-B"
+    "Side-C"; 
+  }
+
+@media screen and (max-width:520px){
   grid-template-columns: 2fr; 
-  /* grid-template-rows: 2fr; */
+  grid-template-rows: .5fr .7fr .65fr .55fr .65fr;
   grid-template-areas:
   "About"
+  "AboutImg"
   "Side-A"
   "Side-B"
   "Side-C"; 
@@ -24,6 +58,11 @@ grid-template-areas:
 `
 export const About = styled.div`
 grid-area: About;
+text-align:left;
+
+`
+export const AboutImg = styled.div`
+grid-area: AboutImg;
 text-align:left;
 
 `
