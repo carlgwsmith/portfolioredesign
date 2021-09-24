@@ -103,6 +103,7 @@ export default function ImageGallery() {
       images={IMAGES}
       enableLightbox={true}
       backdropClosesModal
+      margin={10}
       enableImageSelection={false}/>
         </div>
     )
