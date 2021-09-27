@@ -1,5 +1,4 @@
 import React from 'react';
-import Lightbox from 'react-image-lightbox';
 import {ProjImage,Detail,  ProjDetails, CompareContainer } from './CCelements';
 
 const Compare = () => {
@@ -13,11 +12,6 @@ const Compare = () => {
     fontSize: "2em",
     color:"#3d3d3d",
     textAlign:"center"
-  }
-  const detail = {
-    fontSize:"1.5em",
-    lineHeight:"1.5",
-    marginTop:"0"
   }
   return (
     <div>

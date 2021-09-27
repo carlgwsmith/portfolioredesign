@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import Lightbox from 'react-image-lightbox';
+import React from 'react';
 import {ProjImage, Detail, ProjDetails, GSContainer } from './CCelements';
 import {FaReact} from "react-icons/fa"
 import {SiStyledComponents, SiFirebase} from "react-icons/si"
@@ -10,17 +9,7 @@ const GettingStarted = () => {
     marginLeft:"auto",
     marginRight:"auto"
   }
-  const h2special = {
-    margin: "10px 0 10px 0",
-    fontSize: "2em",
-    color:"#3d3d3d",
-    textAlign:"center"
-  }
-  const detail = {
-    fontSize:"1.5em",
-    lineHeight:"1.5",
-    marginTop:"0"
-  }
+
   const detailBig = {
     fontSize:"2em",
     fontWeight:"600",

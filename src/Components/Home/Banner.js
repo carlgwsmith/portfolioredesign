@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Typewriter from 'typewriter-effect';
 import { Name, HeroContainer, HeroContent, HeroSocial, HeroImg, HeroH1, HeroSpan, HeroBtnWrapper, ArrowForward, ArrowRight, Behance, Dribble, Linkedin} from './BannerElements';
 import {Button} from './Button'
 

@@ -29,11 +29,6 @@ const FMCaseStudy = () => {
     borderLeft: "1px solid",
     marginLeft: "15px"
   }
-  const mock = {
-    width:"400px",
-    float:"left",
-    padding:"20px"
-  }
   const imageUrl = process.env.PUBLIC_URL + '/images/HeaderFM.jpg'
 
   return (

@@ -1,6 +1,5 @@
 import React, {useRef, useEffect} from 'react'
 import { gsap } from "gsap"
-import { Box } from '../Resume/ResumeElements'
 import '../Shared/VennStyles.css'
 
 const VennDiagram = () => {

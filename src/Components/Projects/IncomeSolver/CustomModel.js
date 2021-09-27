@@ -17,11 +17,6 @@ const CustomModels = () => {
     fontSize: "2em",
     color:"#3d3d3d"
   }
-  const detail = {
-    fontSize:"1.5em",
-    lineHeight:"1.5",
-    marginTop:"0"
-  }
   return (
     <div>
       <h2 style={h2special}>Challenge 4: Custom Model Portfolios</h2>

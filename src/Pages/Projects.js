@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { VisResumeContainer, ResumeContainer, About, SideA1, SideA2, SideB1, SideB2 } from '../Components/Projects/ProjectElements';
 import Card from '../Components/Projects/ProjectCard'
 import ImageGallery from '../Components/Shared/ImageGallery';

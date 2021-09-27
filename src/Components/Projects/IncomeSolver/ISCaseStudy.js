@@ -15,9 +15,6 @@ const ISCaseStudy = () => {
   const onHover = () => {
     setHover(!hover)
   }
-  const mockup = {
-    width:"100%"
-  }
   const projName = {
     fontSize: "4em",
     marginTop:"1em",

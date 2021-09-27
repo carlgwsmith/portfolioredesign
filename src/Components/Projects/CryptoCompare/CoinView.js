@@ -1,5 +1,4 @@
 import React from 'react';
-import Lightbox from 'react-image-lightbox';
 import {ProjImage, Detail, ProjDetails, ViewContainer } from './CCelements';
 
 const CoinView = () => {
@@ -13,12 +12,6 @@ const CoinView = () => {
     fontSize: "2em",
     color:"#3d3d3d",
     textAlign:"center"
-  }
-  const detail = {
-    fontSize:"1.5em",
-    lineHeight:"1.5",
-    marginTop:"0",
-    color:"#3d3d3d"
   }
   return (
     <div>

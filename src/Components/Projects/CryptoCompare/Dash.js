@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import Lightbox from 'react-image-lightbox';
+import React from 'react';
 import {ProjImage, Detail, ProjDetails, DashContainer } from './CCelements';
 const Dash = () => {
   const mockup = {
@@ -12,11 +11,6 @@ const Dash = () => {
     fontSize: "2em",
     color:"#3d3d3d",
     textAlign:"center"
-  }
-  const detail = {
-    fontSize:"1.5em",
-    lineHeight:"1.5",
-    marginTop:"0"
   }
   return (
     <div>
