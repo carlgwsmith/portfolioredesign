@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Name, HeroContainer, HeroContent, HeroSocial, HeroImg, HeroH1, HeroSpan, HeroBtnWrapper, ArrowForward, ArrowRight, Behance, Dribble, Linkedin} from './BannerElements';
 import {Button} from './Button'
+import Header from './NameHeader'
 
 const Banner = () => {
   const [hover, setHover] = useState(false)
@@ -18,7 +19,7 @@ const Banner = () => {
             <a href="https://dribbble.com/carlvskansas" target="_blank"><Dribble/></a>
             <a href="https://www.linkedin.com/in/carl-gw-smith/" target="_blank"><Linkedin/></a>
         </HeroSocial>
-        <Name className="tracking-in-contract">Carl Smith</Name>
+        <Header/>
         <HeroH1>Developer/Designer focused on creating elegant digital experiences, <HeroSpan>especially for fintech.</HeroSpan></HeroH1>
         <HeroBtnWrapper>
           <Button to="/Resume" onMouseEnter={onHover} onMouseLeave={onHover}>

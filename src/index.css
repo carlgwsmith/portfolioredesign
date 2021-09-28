@@ -44,6 +44,14 @@ textarea:focus, input:focus{
   outline-color: orange;
   background-color:rgb(253, 246, 232)
 }
+.letter{
+  font-family:'Helvetica', sans-serif;
+  font-size:3.4em;
+  -webkit-text-stroke: 1px #535353;
+  color:#fff;
+  margin-bottom:0px;
+  margin-top:0px;
+}
 .submitBtn{
   display: block;
   font-family: 'Work Sans', sans-serif;

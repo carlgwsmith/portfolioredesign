@@ -16,16 +16,16 @@ useEffect(() => {
 gsap.set(c1.current, {
     transformOrigin: "150% 150%",
     y:'0',
-    x:'-200%',
+    x:'-10%',
     opacity: '0',
     scaleX:'0.3',
     scaleY:'0.3'
   })
   
   gsap.set(c2.current, {
-    transformOrigin: "150% 150%",
+    transformOrigin: "0% 150%",
     opacity: '0',
-    x:'200%',
+    x:'10%',
     y:'0',
     scaleX:'0.3',
     scaleY:'0.3'

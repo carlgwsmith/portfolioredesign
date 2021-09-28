@@ -69,6 +69,14 @@ align-items: center;
 export const HeroSocial = styled.div`
 padding:20px;
 `
+export const Header = styled.div`
+display: flex;
+  justify-content: center;
+  align-items: center;
+`
+export const LetterWrap = styled.div`
+display:flex;
+`
 export const HeroContent = styled.div`
 z-index:3;
 max-width:1200px;
@@ -77,6 +85,7 @@ padding:8px 25px;
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top:10%;
 @media screen and (max-width:600px){
 margin-top:60px;
 }
