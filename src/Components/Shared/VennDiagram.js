@@ -40,15 +40,17 @@ gsap.set(c1.current, {
     opacity:'0'
     })
 gsap.set(textClass1.current, {
-    opacity:'0'
+    opacity:'0',
+    x:'100%'
     })
     gsap.set(textClass2.current, {
-        opacity:'0'
+        opacity:'0',
+        x:'-100%'
     })
   
   gsap.to(c1.current, {
     duration:2,
-    delay: 1,
+    delay: .5,
     x:'0%',
     opacity:'1',
     scaleX:'1',
@@ -57,7 +59,7 @@ gsap.set(textClass1.current, {
   })
   
   gsap.to(c2.current, {
-    delay: 1,
+    delay: .5,
     duration:2,
     x:'0',
     opacity:'1',
@@ -66,27 +68,27 @@ gsap.set(textClass1.current, {
     ease: "circ"
   })
   gsap.to(textClass1.current,{
-    delay: 3.8,
+    delay: 2.8,
     duration:2,
     opacity:1,
     x:0,
     fill:"white"
   })
   gsap.to(textClass2.current,{
-    delay: 3.8,
+    delay: 2.8,
     duration:2,
     opacity:1,
     x:10,
     fill:"white"
   })
   gsap.to(innerTextClass.current,{
-    delay: 4.7,
+    delay: 3.7,
     duration:2,
     opacity:1,
     fill:"white"
   })
   gsap.to(c3.current,{
-    delay: 3.6,
+    delay: 2.6,
     duration:2,
     opacity:1,
   })

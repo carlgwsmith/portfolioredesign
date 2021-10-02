@@ -165,21 +165,19 @@ position:absolute;
 color:transparent;
 `
 export const ProjCard = styled.div`
-height: 300px;
+// height: 300px;
 position:relative;
 /* border-radius:20px; */
 background-size: 400px  !important;
 background-position: center !important;
-border:5px solid #f4f4f4;
+// border:5px solid #f4f4f4;
 background-repeat: no-repeat !important;
-background: black;
 /* box-shadow: 4px 6px 12px #d8d8d8; */
 overflow: hidden;
 transition: all 0.2s ease-out-in;
 &:hover {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  border: 5px solid #ffb80b;
 }
 &:hover ${ProjTitle}{
   transition: all 0.2s ease-in-out;

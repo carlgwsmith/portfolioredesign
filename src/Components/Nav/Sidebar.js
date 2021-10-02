@@ -1,5 +1,6 @@
 import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarLink, SidebarWrapper, SidebarMenu } from './SidebarElements';
+import { Behance, Dribble, Linkedin } from '../Home/BannerElements';
 
 const Sidebar = ({isOpen, toggle}) => {
   return (
@@ -19,6 +20,9 @@ const Sidebar = ({isOpen, toggle}) => {
             Contact
           </SidebarLink>
         </SidebarMenu>
+          <a href="https://www.behance.net/carlvskansas" target="_blank"><Behance/></a>
+          <a href="https://dribbble.com/carlvskansas" target="_blank"><Dribble/></a>
+          <a href="https://www.linkedin.com/in/carl-gw-smith/" target="_blank"><Linkedin/></a>
       </SidebarWrapper>
     </SidebarContainer>
   );

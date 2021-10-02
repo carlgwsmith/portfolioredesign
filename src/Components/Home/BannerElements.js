@@ -88,6 +88,7 @@ align-items: center;
 margin-top:10%;
 @media screen and (max-width:600px){
 margin-top:60px;
+padding:
 }
 `
 

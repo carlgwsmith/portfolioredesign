@@ -11,9 +11,9 @@ const Banner = () => {
   }
   return (
     <div>
-      <HeroContainer>
+      <HeroContainer className="fade-in">
         <HeroContent>
-        <HeroImg className="fade-in" src={process.env.PUBLIC_URL + '/images/carl1.jpg'}></HeroImg>
+        <HeroImg src={process.env.PUBLIC_URL + '/images/carl1.jpg'}></HeroImg>
         <HeroSocial>
             <a href="https://www.behance.net/carlvskansas" target="_blank"><Behance/></a>
             <a href="https://dribbble.com/carlvskansas" target="_blank"><Dribble/></a>
