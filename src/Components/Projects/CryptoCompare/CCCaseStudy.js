@@ -3,9 +3,10 @@ import ProjectChallenge from './ProjectChallenge';
 import ProjectVision from './ProjectVision';
 import GettingStarted from './GettingStarted';
 import Dash from './Dash';
+import Carl from './Carl'
 import CoinView from './CoinView';
 import Comparison from './Compare'
-import { ProjectOverview, Header, Vision, Challenge, GS, Dashboard, View, Compare} from './CCelements';
+import { ProjectOverview, Role, Header, Vision, Challenge, GS, Dashboard, View, Compare} from './CCelements';
 import { Button } from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 
@@ -32,6 +33,9 @@ const CCCaseStudy = () => {
           </Button>
         </HeroBtnWrapper>
         </Header>
+        <Role>
+          <Carl/>
+        </Role>
         <Vision>
           <ProjectVision/>
         </Vision>
