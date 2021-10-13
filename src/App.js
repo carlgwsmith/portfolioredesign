@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import {useState} from 'react';
+import React, {useState} from 'react';
 import CustomNav from './Components/Nav/CustomNav';
 import Sidebar from './Components/Nav/Sidebar';
 import Home from './Pages/Home'

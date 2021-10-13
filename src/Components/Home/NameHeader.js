@@ -1,8 +1,9 @@
 import React, {useEffect} from 'react'
 import { Header, LetterWrap} from './BannerElements'
-import gsap from 'gsap'
+import { gsap } from "gsap";
 
-export default function NameHeader() {
+const NameHeader = () => {
+
     useEffect(() => {
         gsap.from(".letter", {rotationY: 36, opacity:0, duration: .8, yPercent: -100, stagger: 0.1, ease:"Expo.easeOut"})
     }, [])
@@ -25,3 +26,5 @@ export default function NameHeader() {
     </Header>
     )
 }
+
+export default NameHeader;

@@ -11,7 +11,7 @@ export const ResumeContainer = styled.div`
     "SideA1 SideB1 SideA2 SideB2"; 
     @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .6fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: .35fr 1fr 1fr 1fr 1fr;
   padding: 15px;
   grid-template-areas: 
     "About"
@@ -30,6 +30,14 @@ export const VisResumeContainer = styled.div`
   grid-template-areas:
     "About"
     "SideA1";
+    @media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr;
+  padding: 15px;
+  grid-template-areas: 
+    "About"
+    "SideA1";
+} 
 `
 
 export const ProjectOverview = styled.div`
@@ -141,6 +149,7 @@ vertical-align: middle;
 margin:10px 0;
 @media screen and (max-width:600px){
 padding-left:10px;
+font-size:1em;
 }
 `
 export const SideA1 = styled.div`

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { ProjectOverview, Header, Vision, Tools, Mock} from './RCElements';
 import { Button } from '../ProjectElements';
 import {IoLogoVue} from 'react-icons/io5'
-import {SiVueDotJs, SiBootstrap} from 'react-icons/si'
+import {SiVuedotjs, SiBootstrap} from 'react-icons/si'
 import {RiRouteFill} from 'react-icons/ri'
 import {AiOutlineAreaChart} from 'react-icons/ai'
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
@@ -51,7 +51,7 @@ const RCCaseStudy = () => {
         <Tools>
           <h2>Tools Used:</h2>
           <p><IoLogoVue color="limegreen" size="2em"/><span style={toolName}>VueJs</span></p>
-          <p><SiVueDotJs color="limegreen" size="2em"/><span style={toolName}>VueX</span></p>
+          <p><SiVuedotjs color="limegreen" size="2em"/><span style={toolName}>VueX</span></p>
           <p><RiRouteFill color="#959595" size="2em"/><span style={toolName}>VueRouter</span></p>
           <p><SiBootstrap color="#061179" size="2em"/><span style={toolName}>Bootstrap 5</span></p>
           <p><AiOutlineAreaChart color="#ff6161" size="2em"/><span style={toolName}>ChartJS</span></p>

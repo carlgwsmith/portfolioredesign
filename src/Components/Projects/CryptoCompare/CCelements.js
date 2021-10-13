@@ -25,12 +25,14 @@ color:"#3d3d3d";
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .25fr .1fr .5fr .5fr .5fr .6fr; 
+  grid-template-rows: .25fr .1fr .25fr .5fr .5fr .5fr .6fr .5fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
     "Header Header"
     "Role Role"
+    "Problem Solution"
+    "Process Process"
     "Vision Challenge"
     "GS GS"
     "Dashboard Dashboard"
@@ -39,9 +41,13 @@ export const ProjectOverview = styled.div`
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .15fr .3fr .4fr .5fr .4fr .5fr; 
+  grid-template-rows: .3fr .15fr .1fr .1fr .2fr .3fr .3fr .4fr .5fr .4fr .5fr; 
   grid-template-areas: 
     "Header"
+    "Role"
+    "Problem"
+    "Solution"
+    "Process"
     "Vision"
     "Challenge"
     "GS"
@@ -58,6 +64,13 @@ line-height: 2;
 padding:30px;
 background-color: #00a7ff;
 `
+export const Process = styled.div`
+grid-area: Process;
+text-align:left;
+padding:20px;
+line-height: 2;
+padding:30px;
+`
 
 export const Vision = styled.div`
 grid-area: Vision;
@@ -68,6 +81,18 @@ padding:30px;
 `
 export const Challenge = styled.div`
 grid-area: Challenge;
+text-align:left;
+padding:20px;
+padding:30px;
+`
+export const Problem = styled.div`
+grid-area: Problem;
+text-align:left;
+padding:20px;
+padding:30px;
+`
+export const Solution = styled.div`
+grid-area: Solution;
 text-align:left;
 padding:20px;
 padding:30px;
@@ -225,6 +250,15 @@ color: white;
 padding: 0px 30px;
 grid-template-areas: 
     "MyRole Duration Responsibility"
+}
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .5fr; 
+  grid-template-areas:
+    "MyRole"
+    "Duration"
+    "Responsibility";
+} 
 `
 export const MyRole = styled.div`
 grid-area: MyRole;
