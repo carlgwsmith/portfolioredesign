@@ -7,9 +7,10 @@ import Carl from './Carl'
 import Ccproblem from './CCProblem';
 import Ccprocess from './CCprocess';
 import Ccsolution from './CCSolution';
+import Ccuserresearch from './CCuserResearch';
 import CoinView from './CoinView';
 import Comparison from './Compare'
-import { ProjectOverview, Role, Header, Vision, Challenge, GS, Dashboard, View, Compare, Problem, Solution, Process} from './CCelements';
+import { ProjectOverview, Role, Header, Vision, Challenge, GS, Dashboard, View, Compare, Problem, Solution, Process, UserResearch} from './CCelements';
 import { Button } from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 
@@ -29,7 +30,7 @@ const CCCaseStudy = () => {
     <div>
       <ProjectOverview>
         <Header img={imageUrl}>
-          <h1 style={projName}>Crypto Compare</h1>
+          <h1 style={projName}>CryptoCompare</h1>
           <HeroBtnWrapper>
           <Button href="https://carlgwsmith.github.io/crypto-compare" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
             See Project {hover ? <ArrowForward/> : <ArrowRight/>}
@@ -48,6 +49,9 @@ const CCCaseStudy = () => {
         <Process>
           <Ccprocess/>
         </Process>
+        <UserResearch>
+          <Ccuserresearch/>
+        </UserResearch>
         <Vision>
           <ProjectVision/>
         </Vision>

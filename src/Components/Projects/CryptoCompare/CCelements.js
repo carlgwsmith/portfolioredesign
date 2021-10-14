@@ -25,7 +25,7 @@ color:"#3d3d3d";
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .25fr .1fr .25fr .25fr .5fr .5fr .6fr .5fr; 
+  grid-template-rows: .25fr .1fr .25fr .25fr .25fr .5fr .5fr .6fr .5fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -33,6 +33,7 @@ export const ProjectOverview = styled.div`
     "Role Role"
     "Problem Solution"
     "Process Process"
+    "UserResearch UserResearch"
     "Vision Challenge"
     "GS GS"
     "Dashboard Dashboard"
@@ -70,7 +71,7 @@ text-align:left;
 padding:20px;
 line-height: 2;
 padding:30px;
-background-color: #eeeeee;
+background-color: #f5f8ff;
 `
 
 export const Vision = styled.div`
@@ -83,20 +84,27 @@ padding:30px;
 export const Challenge = styled.div`
 grid-area: Challenge;
 text-align:left;
-padding:20px;
 padding:30px;
 `
 export const Problem = styled.div`
 grid-area: Problem;
 text-align:left;
-padding:20px;
+margin: 15px 0px;
+padding:30px;
+background-color:#ff7171;
+`
+export const UserResearch = styled.div`
+grid-area: UserResearch;
+text-align:left;
+margin: 0px;
 padding:30px;
 `
 export const Solution = styled.div`
 grid-area: Solution;
 text-align:left;
-padding:20px;
+margin: 15px 0px;
 padding:30px;
+background-color:#6effa8;
 `
 export const Header = styled.div`
 grid-area: Header;
@@ -250,8 +258,7 @@ grid-template-rows: 1fr;
 color: white;
 padding: 0px 30px;
 grid-template-areas: 
-    "MyRole Duration Responsibility"
-}
+    "MyRole Duration Responsibility";
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
   grid-template-rows: .5fr; 
@@ -272,5 +279,52 @@ text-align:left;
 `
 export const Responsibility = styled.div`
 grid-area: Responsibility;
+text-align:left;
+`
+export const URContainer = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: .3fr 1fr 1fr;
+padding: 0px 30px;
+grid-template-areas: 
+    "ROverview ROverview ROverview ROverview ROverview ROverview"
+    "RBlockQuotes1 RBlockQuotes1 RBlockQuotes2 RBlockQuotes2 RBlockQuotes3 RBlockQuotes3"
+    "Persona1 Persona1 Persona1 Persona2 Persona2 Persona2"
+/* }
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .5fr; 
+  grid-template-areas:
+    "MyRole"
+    "Duration"
+    "Responsibility";
+}  */
+`
+
+export const ROverview = styled.div`
+grid-area: ROverview;
+text-align:left;
+`
+export const RBlockQuotes1 = styled.div`
+grid-area: RBlockQuotes1;
+text-align:left;
+padding:20px;
+`
+export const RBlockQuotes2 = styled.div`
+grid-area: RBlockQuotes2;
+text-align:left;
+padding:20px;
+`
+export const RBlockQuotes3 = styled.div`
+grid-area: RBlockQuotes3;
+text-align:left;
+padding:20px;
+`
+export const Persona1 = styled.div`
+grid-area: Persona1;
+text-align:left;
+`
+export const Persona2 = styled.div`
+grid-area: Persona2;
 text-align:left;
 `
