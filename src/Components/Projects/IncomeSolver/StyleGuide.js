@@ -22,6 +22,9 @@ const CustomModels = () => {
     <div>
       <h2 style={h2special}>Challenge 3: Custom Styling</h2>
       <StyleGuideContainer>
+      <ProjDetails>
+          <Detail>In developing my research, we met with executive stakeholders and decided that a new design system should be created to emphasize the shift in product focus and freshen things up for legacy users. Our goal was to utilize the Quasar design system and makes tweaks to develop a system that more aligns with our brand.</Detail>
+        </ProjDetails>
       <ProjImage>
         <img src={process.env.PUBLIC_URL + '/images/styleguide.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
         {isOpen && (
@@ -31,10 +34,6 @@ const CustomModels = () => {
       />
     )}
         </ProjImage>
-        <ProjDetails>
-          <Detail>Model portfolios are a collection of various holdings that are grouped together and <em>modeled</em> by their risk level. Example: "This group of 10 holdings together equals a risk level of conservative".</Detail>
-          <Detail>Many financial advisors use model portfolios from large investment firms, or sometimes they create their own. Model portfolio complexity can get very tedious as advisors often create portfolios to change allocation over time. For example when you get older your risk tolerance becomes more conservative so you would ideally want your investment portfolio to change to conservative.</Detail>
-        </ProjDetails>
       </StyleGuideContainer>
     </div>
   );

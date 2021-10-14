@@ -1,5 +1,5 @@
 import React from 'react';
-import {GiGearStickPattern} from 'react-icons/gi'
+import { GiGearStickPattern } from 'react-icons/gi'
 
 const Ccprocess = () => {
   const mockup = {

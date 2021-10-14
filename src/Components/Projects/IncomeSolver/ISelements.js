@@ -100,16 +100,16 @@ export const StyleGuideContainer = styled.div`
   grid-template-rows: .3fr .3fr; 
   gap: 0px 0px;
   padding:0px;
-  grid-template-areas: 
-    "ProjImage ProjImage"
-    "ProjDetails ProjDetails";
+  grid-template-areas:
+  "ProjDetails ProjDetails"
+    "ProjImage ProjImage";
   
 @media screen and (max-width:900px){
   grid-template-columns: 1fr; 
   grid-template-rows: .4fr .5fr; 
-  grid-template-areas: 
-    "ProjImage"
-    "ProjDetails";
+  grid-template-areas:
+  "ProjDetails"
+    "ProjImage";
 } 
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 

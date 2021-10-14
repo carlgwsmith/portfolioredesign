@@ -21,12 +21,12 @@ const Ccuserresearch = () => {
        <p>"Investors aren’t completely confident in crypto, however. More than half of the investors surveyed agree that their biggest concern is losing their money due to financial volatility."</p>
          <p>- CNBC</p>
        </RBlockQuotes3>
-       <Persona1>
+       {/* <Persona1>
          P1
        </Persona1>
        <Persona2>
          P2
-       </Persona2>
+       </Persona2> */}
      </URContainer>
     </div>
     

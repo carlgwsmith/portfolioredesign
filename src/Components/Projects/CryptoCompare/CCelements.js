@@ -284,7 +284,7 @@ text-align:left;
 export const URContainer = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: .3fr 1fr 1fr;
+grid-template-rows: .3fr 1fr 0fr;
 padding: 0px 30px;
 grid-template-areas: 
     "ROverview ROverview ROverview ROverview ROverview ROverview"
