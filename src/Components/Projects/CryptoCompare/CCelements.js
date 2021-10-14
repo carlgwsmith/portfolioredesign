@@ -60,15 +60,13 @@ export const ProjectOverview = styled.div`
 
 export const Role = styled.div`
 grid-area: Role;
-padding:20px;
 line-height: 2;
-padding:30px;
+padding: 10px 30px;
 background-color: #00a7ff;
 `
 export const Process = styled.div`
 grid-area: Process;
 text-align:left;
-padding:20px;
 line-height: 2;
 padding:30px;
 background-color: #f5f8ff;
@@ -77,7 +75,6 @@ background-color: #f5f8ff;
 export const Vision = styled.div`
 grid-area: Vision;
 text-align:left;
-padding:20px;
 line-height: 2;
 padding:30px;
 `
@@ -111,7 +108,6 @@ background-color:#6effa8;
 export const Header = styled.div`
 grid-area: Header;
 text-align:center;
-padding:20px;
 padding:30px;
 background-color:grey;
 background-image: url(${props => props.img});
@@ -139,7 +135,6 @@ padding:30px;
 export const View = styled.div`
 grid-area: View;
 text-align:left;
-padding:20px;
 background-color:#f5f8ff;
 padding:30px;
 `
@@ -147,7 +142,6 @@ padding:30px;
 export const Compare = styled.div`
 grid-area: Compare;
 text-align:left;
-padding:20px;
 background-color:#fff;
 color:#3d3d3d;
 padding:30px;

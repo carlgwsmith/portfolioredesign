@@ -21,11 +21,12 @@ const CCCaseStudy = () => {
     setHover(!hover)
   }
   const projName = {
-    fontSize: "4em",
+    fontSize: "4rem",
     marginTop:"1em",
-    color:"#415b66"
+    fontWeight: "400",
+    color:"#fff"
   }
-  const imageUrl = process.env.PUBLIC_URL + '/images/ccheaderlitebg.jpg'
+  const imageUrl = process.env.PUBLIC_URL + '/images/CCheaderbg.jpg'
   return (
     <div>
       <ProjectOverview>
