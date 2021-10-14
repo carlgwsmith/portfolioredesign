@@ -25,7 +25,7 @@ color:"#3d3d3d";
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .25fr .1fr .25fr .5fr .5fr .5fr .6fr .5fr; 
+  grid-template-rows: .25fr .1fr .25fr .25fr .5fr .5fr .6fr .5fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -70,6 +70,7 @@ text-align:left;
 padding:20px;
 line-height: 2;
 padding:30px;
+background-color: #eeeeee;
 `
 
 export const Vision = styled.div`
