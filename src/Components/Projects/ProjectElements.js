@@ -43,7 +43,7 @@ export const VisResumeContainer = styled.div`
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .25fr .1fr .5fr .5fr .5fr .6fr .2fr; 
+  grid-template-rows: .15fr .1fr .25fr .35fr .5fr .1fr .2fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 

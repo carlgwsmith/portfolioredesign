@@ -89,7 +89,8 @@ padding:30px;
 export const Problem = styled.div`
 grid-area: Problem;
 text-align:left;
-margin: 15px 0px;
+margin: 40px;
+border-radius: 20px;
 padding:30px;
 background-color:#ff7171;
 `
@@ -102,7 +103,8 @@ padding:30px;
 export const Solution = styled.div`
 grid-area: Solution;
 text-align:left;
-margin: 15px 0px;
+margin: 40px;
+border-radius: 20px;
 padding:30px;
 background-color:#6effa8;
 `

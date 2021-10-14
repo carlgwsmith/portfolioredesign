@@ -12,9 +12,11 @@ import CCCaseStudy from './Components/Projects/CryptoCompare/CCCaseStudy';
 import RCCaseStudy from './Components/Projects/RetirementCalc/RCCaseStudy';
 import 'react-image-lightbox/style.css';
 import './App.css';
+import ReactGA from 'react-ga';
+import RouteChangeTracker from './RouteChangeTracker';
 
 function App() {
-
+  ReactGA.initialize('UA-188840384-1');
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
@@ -36,6 +38,7 @@ function App() {
         <Route path="/projects/fomomachine" exact component={FMCaseStudy}/>
         </Switch>
       </div>
+      <RouteChangeTracker/>
     </Router>
   );
 }

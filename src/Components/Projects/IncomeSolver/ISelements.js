@@ -97,7 +97,7 @@ export const SupportContainer = styled.div`
 export const StyleGuideContainer = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .3fr .3fr; 
+  grid-template-rows: .1fr 1fr;
   gap: 0px 0px;
   padding:0px;
   grid-template-areas:
@@ -106,7 +106,7 @@ export const StyleGuideContainer = styled.div`
   
 @media screen and (max-width:900px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .4fr .5fr; 
+  grid-template-rows: .2fr .5fr; 
   grid-template-areas:
   "ProjDetails"
     "ProjImage";
