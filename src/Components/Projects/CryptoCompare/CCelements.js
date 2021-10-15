@@ -42,7 +42,7 @@ export const ProjectOverview = styled.div`
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .15fr .1fr .1fr .2fr .3fr .3fr .4fr .5fr .4fr .5fr; 
+  grid-template-rows: .15fr .15fr .1fr .1fr .15fr .3fr .3fr 1fr .4fr .5fr .4fr .5fr;
   grid-template-areas: 
     "Header"
     "Role"
@@ -51,11 +51,23 @@ export const ProjectOverview = styled.div`
     "Process"
     "Vision"
     "Challenge"
+    "UserResearch"
     "GS"
     "Dashboard"
     "View"
     "Compare";
 } 
+`
+export const ProjName = styled.h1`
+  font-size:4em;
+  margin-top:1em;
+  font-weight: 400;
+  color:#3d3d3d;
+
+  @media screen and (max-width:600px){
+    font-size:2em;
+    font-weight:500;
+  }
 `
 
 export const Role = styled.div`
@@ -257,7 +269,7 @@ grid-template-areas:
     "MyRole Duration Responsibility";
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .5fr; 
+  grid-template-rows: .5fr .5fr .5fr; 
   grid-template-areas:
     "MyRole"
     "Duration"
@@ -280,21 +292,22 @@ text-align:left;
 export const URContainer = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: .3fr 1fr 0fr;
-padding: 0px 30px;
+grid-template-rows: .3fr 1fr 1fr;
 grid-template-areas: 
     "ROverview ROverview ROverview ROverview ROverview ROverview"
     "RBlockQuotes1 RBlockQuotes1 RBlockQuotes2 RBlockQuotes2 RBlockQuotes3 RBlockQuotes3"
-    "Persona1 Persona1 Persona1 Persona2 Persona2 Persona2"
-/* }
+    "Persona1 Persona1 Persona1 Persona2 Persona2 Persona2";
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .5fr; 
+  grid-template-rows: .2fr .5fr .5fr .5fr .5fr .5fr; 
   grid-template-areas:
-    "MyRole"
-    "Duration"
-    "Responsibility";
-}  */
+    "ROverview"
+    "RBlockQuotes1"
+    "RBlockQuotes2"
+    "RBlockQuotes3"
+    "Persona1"
+    "Persona2";
+} 
 `
 
 export const ROverview = styled.div`
@@ -323,4 +336,14 @@ text-align:left;
 export const Persona2 = styled.div`
 grid-area: Persona2;
 text-align:left;
+`
+export const QuoteBox = styled.div`
+border:1px solid #f3f3f3;
+padding:20px;
+/* height:170px; */
+position: relative;
+
+@media screen and (max-width:600px){
+  /* height:220px; */
+}
 `
