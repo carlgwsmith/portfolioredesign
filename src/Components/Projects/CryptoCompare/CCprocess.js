@@ -18,7 +18,7 @@ const Ccprocess = () => {
   return (
     <div>
       <h2 style={{color:"#3d3d3d"}}><GiGearStickPattern/> Process</h2>
-      <img src={process.env.PUBLIC_URL + '/images/CCprocess.svg'} alt="crypto compare process flow" style={mockup}></img>
+      <img src={process.env.PUBLIC_URL + '/images/CCprocess.svg'} alt="crypto compare process flow" style={mockup} onClick={() => setOpen(true)}></img>
       {isOpen && (
           <Lightbox
           mainSrc={images[photoIndex]}
