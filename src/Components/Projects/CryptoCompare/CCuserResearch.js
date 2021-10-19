@@ -1,7 +1,17 @@
-import React from 'react';
-import { QuoteBox, URContainer, ROverview, RBlockQuotes1, RBlockQuotes2, RBlockQuotes3, Persona1, Persona2 } from './CCelements';
-
+import React, {useState} from 'react';
+import { QuoteBox, URContainer, ROverview, RBlockQuotes1, RBlockQuotes2, RBlockQuotes3, Persona1, Persona2, JourneyMap, JourneyContainer } from './CCelements';
+import Persona from './Persona1';
+import Lightbox from 'react-image-lightbox';
+import {GrUser} from 'react-icons/gr'
 const Ccuserresearch = () => {
+  const images = [
+    "/images/CCJourneyMap.jpg"
+  ];
+  
+
+  const [isOpen, setOpen] = useState(false)
+  const [photoIndex, setPhotoIndex] = useState(0)
+
   const quotation = {
     fontSize:"2em",
     fontWeight: "600",
@@ -22,7 +32,7 @@ const Ccuserresearch = () => {
     <div>
      <URContainer>
        <ROverview>
-       <h2>User Research</h2>
+       <h2><GrUser/> User Research</h2>
        <p>The differences between cryptocurrencies matter to traders because they give vital clues as to how supply and demand for each coin may change over time, in turn influencing market prices and how cryptocurrencies are traded.</p>
        </ROverview>
        <RBlockQuotes1>
@@ -43,12 +53,23 @@ const Ccuserresearch = () => {
        </QuoteBox>
          <p style={quoteattr}>- CNBC</p>
        </RBlockQuotes3>
-       {/* <Persona1>
-         P1
+       <Persona1>
+         <Persona/>
        </Persona1>
        <Persona2>
-         P2
-       </Persona2> */}
+         <JourneyContainer>
+          <h3 style={{paddingLeft:"20px"}}>James' Journey Map</h3>
+          <JourneyMap>
+          <img src={process.env.PUBLIC_URL + '/images/CCJourneyMap.jpg'} onClick={() => setOpen(true)} style={{width:"100%"}}></img>
+          </JourneyMap>
+          {isOpen && (
+          <Lightbox
+          mainSrc={images[photoIndex]}
+          onCloseRequest={() => setOpen(false)}
+          />
+          )}
+         </JourneyContainer>
+       </Persona2>
      </URContainer>
     </div>
     

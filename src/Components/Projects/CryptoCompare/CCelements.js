@@ -25,7 +25,7 @@ color:"#3d3d3d";
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .25fr .1fr .25fr .25fr .25fr .5fr .5fr .6fr .5fr; 
+  grid-template-rows: .1fr .08fr .1fr .18fr .25fr .2fr .3fr .6fr .2fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -42,7 +42,7 @@ export const ProjectOverview = styled.div`
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .15fr .15fr .1fr .1fr .15fr .3fr .3fr 1fr .4fr .5fr .4fr .5fr;
+  grid-template-rows: .15fr .15fr .1fr .1fr .15fr .3fr .3fr 2fr .4fr .5fr .4fr .2fr;
   grid-template-areas: 
     "Header"
     "Role"
@@ -291,15 +291,17 @@ text-align:left;
 `
 export const URContainer = styled.div`
 display: grid;
+color:#3d3d3d;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: .3fr 1fr 1fr;
+grid-template-rows: .2fr .5fr .8fr .7fr;
 grid-template-areas: 
     "ROverview ROverview ROverview ROverview ROverview ROverview"
     "RBlockQuotes1 RBlockQuotes1 RBlockQuotes2 RBlockQuotes2 RBlockQuotes3 RBlockQuotes3"
-    "Persona1 Persona1 Persona1 Persona2 Persona2 Persona2";
+    "Persona1 Persona1 Persona1 Persona1 Persona1 Persona1"
+    "Persona2 Persona2 Persona2 Persona2 Persona2 Persona2";
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .2fr .5fr .5fr .5fr .5fr .5fr; 
+  grid-template-rows: .2fr .2fr .2fr .2fr .5fr .2fr; 
   grid-template-areas:
     "ROverview"
     "RBlockQuotes1"
@@ -346,4 +348,70 @@ position: relative;
 @media screen and (max-width:600px){
   /* height:220px; */
 }
+`
+
+export const PersonaContainer = styled.div`
+display: grid;
+color:#3d3d3d;
+border:1px solid #ababab;
+padding:15px;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: .3fr .3fr .3fr .5fr .5fr .5fr;
+grid-template-areas: 
+    "PersonaName PersonaName PersonaName"
+    "PersonaImg PersonaQuote PersonaQuote"
+    "PersonaImg PersonaDetails PersonaDetails"
+    "PersonaImg ProblemStatement ProblemStatement"
+    "PersonaImg PersonaGoal PersonaFrus"
+    "UserNeeds UserNeeds UserNeeds";
+
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .2fr .5fr .2fr .35fr .25fr .25fr .3fr .3fr; 
+  grid-template-areas:
+    "PersonaName"
+    "PersonaImg"
+    "PersonaQuote"
+    "PersonaDetails"
+    "ProblemStatement"
+    "PersonaGoal"
+    "PersonaFrus"
+    "UserNeeds";
+} 
+`
+export const PersonaName = styled.div`
+grid-area: PersonaName;
+`
+export const PersonaQuote = styled.div`
+grid-area: PersonaQuote;
+`
+export const PersonaImg = styled.div`
+grid-area: PersonaImg;
+`
+export const PersonaDetails = styled.div`
+grid-area: PersonaDetails;
+`
+export const PersonaGoal = styled.div`
+grid-area: PersonaGoal;
+`
+export const PersonaFrus = styled.div`
+grid-area: PersonaFrus;
+`
+export const ProblemStatement = styled.div`
+grid-area: ProblemStatement;
+`
+export const UserNeeds = styled.div`
+grid-area: UserNeeds;
+padding:20px;
+border:2px solid orange;
+background-color: #ffeac5;
+`
+export const JourneyMap = styled.div`
+&:hover{
+  cursor:pointer;
+} 
+`
+export const JourneyContainer = styled.div`
+border:1px solid #ababab;
+width:100%;
 `
