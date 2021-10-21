@@ -9,8 +9,9 @@ import Ccprocess from './CCprocess';
 import Ccsolution from './CCSolution';
 import Ccuserresearch from './CCuserResearch';
 import CoinView from './CoinView';
-import Comparison from './Compare'
-import { ProjectOverview, Role, Header, Vision, Challenge, GS, Dashboard, View, Compare, Problem, Solution, Process, UserResearch, ProjName} from './CCelements';
+import Comparison from './Compare';
+import Ideate from './Ideation';
+import { ProjectOverview, Role, Header, Vision, Challenge, GS, Dashboard, View, Compare, Problem, Solution, Process, UserResearch, ProjName, Ideation} from './CCelements';
 import { Button } from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 
@@ -47,6 +48,9 @@ const CCCaseStudy = () => {
         <UserResearch>
           <Ccuserresearch/>
         </UserResearch>
+        <Ideation>
+          <Ideate/>
+        </Ideation>
         <Vision>
           <ProjectVision/>
         </Vision>

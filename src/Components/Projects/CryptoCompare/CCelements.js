@@ -25,44 +25,47 @@ color:"#3d3d3d";
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .1fr .08fr .1fr .18fr .25fr .2fr .3fr .6fr .2fr; 
+  grid-template-rows: .1fr .08fr .1fr .1fr .18fr .3fr .3fr .6fr .2fr .15fr .2fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
     "Header Header"
     "Role Role"
     "Problem Solution"
+    "Vision Challenge"
     "Process Process"
     "UserResearch UserResearch"
-    "Vision Challenge"
-    "GS GS"
+    "Ideation Ideation"
     "Dashboard Dashboard"
     "View View"
-    "Compare Compare";
+    "Compare Compare"
+    "GS GS";
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .15fr .15fr .1fr .1fr .15fr .3fr .3fr 2fr .4fr .5fr .4fr .2fr;
+  grid-template-rows: .15fr .15fr .1fr .1fr .3fr .3fr .15fr 2fr .3fr .5fr .4fr .2fr .4fr;
   grid-template-areas: 
     "Header"
     "Role"
     "Problem"
     "Solution"
-    "Process"
     "Vision"
     "Challenge"
+    "Process"
     "UserResearch"
-    "GS"
+    "Ideation"
     "Dashboard"
     "View"
-    "Compare";
+    "Compare"
+    "GS";
 } 
 `
 export const ProjName = styled.h1`
   font-size:4em;
   margin-top:1em;
-  font-weight: 400;
-  color:#3d3d3d;
+  font-weight: 600;
+  color: #415b66;
+  font-family: "Questrial",sans-serif;
 
   @media screen and (max-width:600px){
     font-size:2em;
@@ -131,15 +134,20 @@ box-shadow:2px 8px 20px #afafaf94;;
 export const GS = styled.div`
 grid-area: GS;
 text-align:center;
-padding:20px;
 background-color:#f5f8ff;
+color:#3d3d3d;
+padding:30px;
+`
+export const Ideation = styled.div`
+grid-area: Ideation;
+text-align:center;
+background-color:#d5ffd2;
 color:#3d3d3d;
 padding:30px;
 `
 export const Dashboard = styled.div`
 grid-area: Dashboard;
 text-align:left;
-padding:20px;
 background-color:#fff;
 color:#3d3d3d;
 padding:30px;
@@ -293,7 +301,7 @@ export const URContainer = styled.div`
 display: grid;
 color:#3d3d3d;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: .2fr .5fr .8fr .7fr;
+grid-template-rows: .2fr .35fr .7fr .7fr;
 grid-template-areas: 
     "ROverview ROverview ROverview ROverview ROverview ROverview"
     "RBlockQuotes1 RBlockQuotes1 RBlockQuotes2 RBlockQuotes2 RBlockQuotes3 RBlockQuotes3"
