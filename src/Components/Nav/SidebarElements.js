@@ -42,6 +42,7 @@ text-align:center;
 
 @media screen and (max-width:480px){
   grid-template-rows: repeat(6, 60px);
+  padding-inline-start: 0;
 }
 `;
 
