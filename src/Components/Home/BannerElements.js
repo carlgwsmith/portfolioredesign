@@ -85,7 +85,7 @@ padding:8px 25px;
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-top:10%;
+margin-top:6%;
 @media screen and (max-width:600px){
 margin-top:60px;
 padding:
