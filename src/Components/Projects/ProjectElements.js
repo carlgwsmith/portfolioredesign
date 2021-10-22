@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const ResumeContainer = styled.div`
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   /* grid-template-rows: 1fr 1fr;  */
   gap: 20px 20px;
   padding: 30px;
   grid-template-areas:
-    "About About About About"
+    "About About About About About"
     "SideA1 SideB1 SideA2 SideB2"; 
     @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .35fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: .35fr 1fr 1fr 1fr 1fr 1fr;
   padding: 15px;
   grid-template-areas: 
     "About"
@@ -19,6 +19,28 @@ export const ResumeContainer = styled.div`
     "SideB1"
     "SideA2"
     "SideB2";
+} 
+`
+export const ProjectContainer = styled.div`
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  /* grid-template-rows: .5fr 1fr;  */
+  gap: 20px 20px;
+  padding: 30px;
+  grid-template-areas:
+    "About About About About About"
+    "SideA1 SideB1 SideA2 SideB2 SideC1"; 
+    @media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .35fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 15px;
+  grid-template-areas: 
+    "About"
+    "SideA1"
+    "SideB1"
+    "SideA2"
+    "SideB2"
+    "SideC1";
 } 
 `
 export const VisResumeContainer = styled.div`
@@ -163,7 +185,9 @@ grid-area: SideB1;
 `
 export const SideB2 = styled.div`
 grid-area: SideB2;
-
+`
+export const SideC1 = styled.div`
+grid-area: SideC1;
 `
 export const ProjTitle = styled.div`
 font-size:1em;

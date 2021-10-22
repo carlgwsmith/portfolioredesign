@@ -20,8 +20,25 @@ transition: all 0.2s ease-in-out;
 
 &:hover {
   transition: all 0.2s ease-in-out;
-  background: ${({ primary }) => (primary ? '#fff' : '#f2f2f2')};
+  background: ${({ primary }) => (primary ? '#fff' : '#ffe3a0')};
   color:#383838;
   border:3px solid #ffb80b;
+}
+`
+
+export const ProjButton = styled.p`
+padding: 10px 20px;
+border: 1px solid #cfcfcf;
+text-decoration: none;
+background-color: white;
+font-size: 14px;
+color:#525252;
+margin-top:4px;
+border-radius:4px;
+&:hover {
+  transition: all 0.2s ease-in-out;
+  background: ${({ primary }) => (primary ? '#fff' : '#ffb80b')};
+  color:#ac7300;
+  border:1px solid #ffe3a0;
 }
 `
