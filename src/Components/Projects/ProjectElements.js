@@ -65,12 +65,15 @@ export const VisResumeContainer = styled.div`
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .15fr .1fr .25fr .35fr .5fr .1fr .2fr; 
+  grid-template-rows: .15fr .1fr .1fr .2fr .25fr .2fr .35fr .5fr .1fr .2fr; 
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
     "Header Header"
+    "Role Role"
+    "Problem Solution"
     "Vision Challenge"
+    "UserResearch UserResearch"
     "GS GS"
     "Accounts Accounts"
     "Help Help"
@@ -79,11 +82,15 @@ export const ProjectOverview = styled.div`
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .15fr .3fr .4fr .5fr .4fr .5fr .5fr; 
+  grid-template-rows: .3fr .15fr .15fr .15fr .15fr .3fr .2fr .4fr .5fr .4fr .5fr .5fr; 
   grid-template-areas: 
     "Header"
+    "Role"
+    "Problem"
+    "Solution"
     "Vision"
     "Challenge"
+    "UserResearch"
     "GS"
     "Accounts"
     "Help"
@@ -112,7 +119,7 @@ padding:30px;
 background-color:grey;
 background-image: url(${props => props.img});
 background-position: center;
-border-bottom: 5px solid #68aff6;
+border-bottom: 5px solid #00a7ff;
 box-shadow: 2px 8px 20px #afafaf94;
 `
 export const GS = styled.div`
@@ -123,12 +130,42 @@ background-color:#3569ec;
 color:#fff;
 padding:30px;
 `
+export const Problem = styled.div`
+grid-area: Problem;
+text-align:left;
+margin: 40px;
+border-radius: 20px;
+padding:30px;
+background-color:#ff7171;
+`
+export const UserResearch = styled.div`
+grid-area: UserResearch;
+text-align:left;
+margin: 40px;
+border-radius: 20px;
+padding:30px;
+`
+export const Solution = styled.div`
+grid-area: Solution;
+text-align:left;
+margin: 40px;
+border-radius: 20px;
+padding:30px;
+background-color:#6effa8;
+`
 export const Accounts = styled.div`
 grid-area: Accounts;
 text-align:left;
 padding-left:20px;
 background-color:#fff;
 padding:30px;
+`
+export const Role = styled.div`
+grid-area: Role;
+line-height: 2;
+padding: 10px 30px;
+background-color: #00a7ff;
+
 `
 export const Help = styled.div`
 grid-area: Help;
