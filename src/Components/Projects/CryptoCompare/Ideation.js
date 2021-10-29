@@ -3,7 +3,7 @@ import {ProjImage, Detail, ProjDetails, DashContainer } from './CCelements';
 import Lightbox from 'react-image-lightbox';
 const Ideation = () => {
   const images = [
-    "/images/CCIdeate.png"
+    "/images/CCideate.png"
   ];
   
 
