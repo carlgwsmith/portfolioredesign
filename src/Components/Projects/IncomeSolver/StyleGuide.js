@@ -9,13 +9,13 @@ const CustomModels = () => {
     "/images/styleguide.png"
   ];
   const mockup = {
-    width: "80%",
-    marginLeft:"10%",
+    width: "60%",
+    marginLeft:"17%",
     marginRight:"auto"
   }
   const h2special = {
-    margin: "10px 0 0 0",
-    fontSize: "2em",
+    margin: "20px 0 20px 0",
+    fontSize: "1.75em",
     color:"#3d3d3d"
   }
   return (

@@ -26,7 +26,7 @@ height:100%;
 cursor: pointer;
 transition: 0.2s ease-in-out;
 &.active{
-  color:#ff9900;
+  color:#ffb80b;
 }
 &:hover{
   letter-spacing:.10em;

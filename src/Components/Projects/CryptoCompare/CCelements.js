@@ -110,7 +110,7 @@ export const UserResearch = styled.div`
 grid-area: UserResearch;
 text-align:left;
 margin: 0px;
-padding:30px;
+padding:0px 30px 15px 30px;
 `
 export const Solution = styled.div`
 grid-area: Solution;

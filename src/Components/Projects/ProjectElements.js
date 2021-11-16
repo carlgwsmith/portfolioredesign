@@ -65,7 +65,7 @@ export const VisResumeContainer = styled.div`
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .15fr .1fr .1fr .2fr .25fr .2fr .35fr .5fr .1fr .2fr; 
+  grid-template-rows: .15fr .065fr .07fr .05fr .01fr .04fr .05fr .3fr .1fr 0.25fr;
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -79,10 +79,10 @@ export const ProjectOverview = styled.div`
     "Help Help"
     "UI UI"
     "Models Models";
-  
+
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .15fr .15fr .15fr .15fr .3fr .2fr .4fr .5fr .4fr .5fr .5fr; 
+  grid-template-rows: .3fr .15fr .15fr .15fr .15fr .3fr .2fr .5fr .65fr .4fr .1fr .5fr; 
   grid-template-areas: 
     "Header"
     "Role"
@@ -101,15 +101,14 @@ export const ProjectOverview = styled.div`
 export const Vision = styled.div`
 grid-area: Vision;
 text-align:left;
-padding-left:20px;
 line-height: 2;
-padding:30px;
+padding:20px 50px 0px 50px;
 `
 export const Challenge = styled.div`
 grid-area: Challenge;
 text-align:left;
 padding-left:20px;
-padding:30px;
+padding:20px 50px;
 `
 export const Header = styled.div`
 grid-area: Header;
@@ -126,15 +125,17 @@ export const GS = styled.div`
 grid-area: GS;
 text-align:center;
 padding-left:20px;
-background-color:#3569ec;
+background-image:url('/images/ISIAbg.jpg');
+background-size: cover;
 color:#fff;
 padding:30px;
 `
 export const Problem = styled.div`
 grid-area: Problem;
 text-align:left;
-margin: 40px;
+margin: 40px 20px 20px 25px;
 border-radius: 20px;
+line-height:1.4;
 padding:30px;
 background-color:#ff7171;
 `
@@ -143,13 +144,14 @@ grid-area: UserResearch;
 text-align:left;
 margin: 40px;
 border-radius: 20px;
-padding:30px;
+padding: 0px 50px;
 `
 export const Solution = styled.div`
 grid-area: Solution;
 text-align:left;
-margin: 40px;
+margin: 40px 25px 20px 20px;
 border-radius: 20px;
+line-height:1.4;
 padding:30px;
 background-color:#6effa8;
 `

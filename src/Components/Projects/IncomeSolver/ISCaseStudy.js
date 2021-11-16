@@ -12,7 +12,7 @@ import IsSolution from './Solution'
 import Research from './Research';
 import { Header, Role, Problem, Solution, Vision, Challenge, GS, ProjectOverview, Accounts, Help, Models, CustomStyle, Button} from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
-import { UserResearch } from '../CryptoCompare/CCelements';
+import { UserResearch } from './ISelements'
 
 const ISCaseStudy = () => {
   const [hover, setHover] = useState(false)
