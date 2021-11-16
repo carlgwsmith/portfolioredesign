@@ -107,13 +107,11 @@ padding:20px 50px 0px 50px;
 export const Challenge = styled.div`
 grid-area: Challenge;
 text-align:left;
-padding-left:20px;
 padding:20px 50px;
 `
 export const Header = styled.div`
 grid-area: Header;
 text-align:center;
-padding-left:20px;
 padding:30px;
 background-color:grey;
 background-image: url(${props => props.img});
@@ -124,7 +122,6 @@ box-shadow: 2px 8px 20px #afafaf94;
 export const GS = styled.div`
 grid-area: GS;
 text-align:center;
-padding-left:20px;
 background-image:url('/images/ISIAbg.jpg');
 background-size: cover;
 color:#fff;
@@ -158,7 +155,6 @@ background-color:#6effa8;
 export const Accounts = styled.div`
 grid-area: Accounts;
 text-align:left;
-padding-left:20px;
 background-color:#fff;
 padding:30px;
 `
@@ -172,21 +168,18 @@ background-color: #00a7ff;
 export const Help = styled.div`
 grid-area: Help;
 text-align:left;
-padding-left:20px;
 background-color:#f8f8f8;
 padding:30px;
 `
 export const CustomStyle = styled.div`
 grid-area: UI;
 text-align:left;
-padding-left:20px;
 background-color:#ffffff;
 padding:30px;
 `
 export const Models = styled.div`
 grid-area: Models;
 text-align:left;
-padding-left:20px;
 background-color:#f3f3f3;
 padding:30px;
 `
