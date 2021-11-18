@@ -233,6 +233,7 @@ export const CustomButton = styled.button`
     background-color: #09b95a;
     color: white;
     border: 2px solid white;
+    margin-bottom: 20px;
     &:focus{
       border-radius:40px;
     }

@@ -20,17 +20,12 @@ const ISCaseStudy = () => {
   const onHover = () => {
     setHover(!hover)
   }
-  const projName = {
-    fontSize: "4em",
-    marginTop:"1em",
-    color:"#fff"
-  }
   const imageUrl = process.env.PUBLIC_URL + '/images/isheaderbg.jpg'
   return (
     <div>
       <ProjectOverview>
       <Header img={imageUrl}>
-      <h1 style={projName}>Income Solver</h1>
+      <h1 className="projName">Income Solver</h1>
       <HeroBtnWrapper>
           <Button href="https://www.incomesolver.com" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
             See Project {hover ? <ArrowForward/> : <ArrowRight/>}
