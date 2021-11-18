@@ -198,11 +198,12 @@ margin-left: auto;
 font-size:1.1em;
 font-weight: 400;
 margin-right: auto;
-padding-bottom:40px;
+padding-bottom:10px;
 line-height: 1.4;
 @media screen and (max-width:600px){
   width:90% !important;
 }`
+
 export const OLCustom = styled.ol`
 list-style-type: none;
 margin-left: 0;
@@ -223,7 +224,7 @@ line-height:1.5;
   width: 1.3em;
 }
 `
-export const CustomButton = styled.a`
+export const CustomButton = styled.button`
     padding: 20px;
     border-radius: 40px;
     font-size: 1em;
@@ -232,7 +233,6 @@ export const CustomButton = styled.a`
     background-color: #09b95a;
     color: white;
     border: 2px solid white;
-    margin-top:20px;
     &:focus{
       border-radius:40px;
     }

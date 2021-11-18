@@ -27,7 +27,8 @@ const AddAccounts = () => {
         </ProjImage>
         <ProjDetails>
           <Detail>A key factor into getting access into the greater software and using it for financial advice is the onboarding process. Users are required to set up their accoounts (or households) and input information about themselves and their financial backgrounds.</Detail>
-          <Detail>Tracking down and inputting account information can be a chore if the experience is tedious. In order to streamline the onboarding process, we streamlined adding accounts by having multiple ways to input accounts, including an automatic sync feature using <a href="https://plaid.com/">plaid</a>. </Detail>
+          <Detail><strong>Previously:</strong> users were expected to input client details (Name, Birthdate, Accounts, etc.) by filling out a long tedious form on a single page that had fields which we sometimes irrelevant to their client resulting in overkill in inputs and frustrations in advisors.</Detail>
+          <Detail><strong>Solution: </strong>Our team "wizard-ized" the profile into manageable and more streamlined sections, giving it a step-by-step feel as opposed to the previously unguided method. Additional features around adding accounts were added like including an automatic sync feature using <a href="https://plaid.com/">plaid</a>. </Detail>
         </ProjDetails>
       </ProjDetailsContainer>
     </div>

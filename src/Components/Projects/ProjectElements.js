@@ -65,7 +65,7 @@ export const VisResumeContainer = styled.div`
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .15fr .065fr .07fr .05fr .01fr .04fr .05fr .3fr .1fr 0.25fr;
+  grid-template-rows: .15fr .065fr .07fr .05fr .01fr .37fr .05fr .3fr .1fr 0.25fr;
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
@@ -80,9 +80,10 @@ export const ProjectOverview = styled.div`
     "UI UI"
     "Models Models";
 
+
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .15fr .15fr .15fr .15fr .3fr .2fr .5fr .65fr .4fr .1fr .5fr; 
+  grid-template-rows: .3fr .15fr .15fr .15fr .15fr .3fr .2fr .25fr .65fr .4fr .1fr .5fr; 
   grid-template-areas: 
     "Header"
     "Role"

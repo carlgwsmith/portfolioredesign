@@ -17,7 +17,8 @@ const GettingStarted = () => {
 us understand how users can interact with components of the product as well as helps us
 identify potential initial pain points.
 
-This practice also sets the stage for the initial information architecture of the new features in the application.</GSpara>
+This practice also sets the stage for the initial information architecture of the new features in the application.
+</GSpara>
 <CustomButton  onClick={() => setOpen(true)} >Click to View Diagram</CustomButton>
     {isOpen && (
       <Lightbox

@@ -33,7 +33,8 @@ const AddAccounts = () => {
         </ProjImage>
         <ProjDetails>
           <Detail>Financial planning concepts are not always easy to to understand and software can often be unhelpful when it assumes too much of the user. Making support available can often save users headaches and companies money. </Detail>
-          <Detail>Along a users journey through the software they may find themselves stuck. We developed a floating sidebar for contextual help that is specific to the current feature the user is actively on. If they require more assistance than they may visit the knowledge base where they can have access to specific higher level topics or get help from a real person.</Detail>
+          <Detail><strong>Previously:</strong> support wasn't available in any form outside of consumer telephone calls, training seminars, and PDFs. A user would have be given a packet of goods upon onboarding/purchase that they could reference. If that onboarding material was unhelpful, the user would have to contact our staff directly.</Detail>
+          <Detail><strong>Solution:</strong> taking note from successful brands we decided to implement a contextual help module. Along a users journey through the software they may find themselves stuck. We developed a floating tab for particularly challenging pages. Upon clicking the tab, a panel slides out from the right and page specific topic becomes available to the user. If they require more assistance than they may visit the knowledge base where they can have access to specific higher level topics or get help from a real person.</Detail>
         </ProjDetails>
       </SupportContainer>
     </div>
