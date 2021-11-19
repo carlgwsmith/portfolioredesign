@@ -13,6 +13,8 @@ import Research from './Research';
 import { Header, Role, Problem, Solution, Vision, Challenge, GS, ProjectOverview, Accounts, Help, Models, CustomStyle, Button} from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 import { UserResearch } from './ISelements'
+import Protect from 'react-app-protect'
+import 'react-app-protect/dist/index.css'
 
 const ISCaseStudy = () => {
   const [hover, setHover] = useState(false)
@@ -22,6 +24,7 @@ const ISCaseStudy = () => {
   }
   const imageUrl = process.env.PUBLIC_URL + '/images/isheaderbg.jpg'
   return (
+    <Protect sha512="387C48819845B16E47AFEEA85E6EDA20CB5EE41692993FB547D9F35F3709B186342DDED518F68D0D3E194F33686F0A1BEEFADBD7417FC08DCD948FDF9A16231E">
     <div>
       <ProjectOverview>
       <Header img={imageUrl}>
@@ -67,6 +70,7 @@ const ISCaseStudy = () => {
         </Models>
       </ProjectOverview>
     </div>
+    </Protect>
   );
 }
 
