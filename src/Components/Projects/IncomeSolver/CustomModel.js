@@ -6,7 +6,8 @@ const CustomModels = () => {
   const [photoIndex, setPhotoIndex] = useState(0)
   const images = [
     "/images/COMPARECustomModel-MockupCrop.png",
-    "/images/ISBuilderIteration.png"
+    "/images/ISBuilderIteration.png",
+    "/images/ISMarketplaceIteration.png"
   ];
   const mockup = {
     width: "100%",
@@ -24,12 +25,12 @@ const CustomModels = () => {
       <ModelsContainer>
       <ProjImage>
         <img src={process.env.PUBLIC_URL + '/images/COMPARECustomModel-MockupCrop.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
-        {/* {isOpen && (
+        {isOpen && (
       <Lightbox
-        mainSrc={images[photoIndex]}
+        mainSrc={images[0]}
         onCloseRequest={() => setOpen(false)}
       />
-    )} */}
+    )}
         </ProjImage>
         <ProjDetails>
           <Detail>Investment portfolios are a collection of various holdings that are grouped together and <em>modeled</em> by their risk level. Example: "This group of 10 holdings together equals a risk level of conservative".</Detail>
@@ -40,12 +41,12 @@ const CustomModels = () => {
         <Detail>Products can be added by single years attributed to a dollar amount and change allocation over years as they client's risk preference changes ensure that the advisor is selecting allocation levels to the clients preference for that point in time.</Detail>
         <img src={process.env.PUBLIC_URL + '/images/ISBuilderIteration.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
         <p style={{textAlign:'center', color:'#8b8b8b'}}>(Iteration of Builder Module)</p>
-        {/* {isOpen && (
+        {isOpen && (
       <Lightbox
-        mainSrc={images[photoIndex]}
+        mainSrc={images[1]}
         onCloseRequest={() => setOpen(false)}
       />
-    )} */}
+    )}
         </ProjImage2>
         <ProjDetails2>
         <Detail>When using the builder the advisor will select "Add product" bringing them into the marketplace which will allow them to select from various investment products.</Detail>
@@ -53,12 +54,12 @@ const CustomModels = () => {
         <Detail>Once a product is added, it stacks in the builder among other selected investment vehicles.</Detail>
         <img src={process.env.PUBLIC_URL + '/images/ISMarketplaceIteration.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
         <p style={{textAlign:'center', color:'#8b8b8b'}}>(Iteration of Marketplace)</p>
-        {/* {isOpen && (
+        {isOpen && (
       <Lightbox
-        mainSrc={images[photoIndex]}
+        mainSrc={images[2]}
         onCloseRequest={() => setOpen(false)}
       />
-    )} */}
+    )}
         </ProjDetails2>
       </ModelsContainer>
     </div>

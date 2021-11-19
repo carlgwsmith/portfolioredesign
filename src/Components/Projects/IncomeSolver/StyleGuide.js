@@ -6,7 +6,7 @@ const CustomModels = () => {
   const [isOpen, setOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
   const images = [
-    "/images/styleguide.png"
+    "/images/ISStyleGuide.jpg"
   ];
   const mockup = {
     width: "60%",
@@ -23,10 +23,11 @@ const CustomModels = () => {
       <h2 style={h2special}>Challenge 3: Custom Styling</h2>
       <StyleGuideContainer>
       <ProjDetails>
+          <Detail></Detail>
           <Detail>In developing my research, we met with executive stakeholders and decided that a new design system should be created to emphasize the shift in product focus and freshen things up for legacy users. Our goal was to utilize the Quasar design system and makes tweaks to develop a system that more aligns with our brand.</Detail>
         </ProjDetails>
       <ProjImage>
-        <img src={process.env.PUBLIC_URL + '/images/styleguide.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
+        <img src={process.env.PUBLIC_URL + '/images/ISStyleGuide.jpg'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
         {isOpen && (
       <Lightbox
         mainSrc={images[photoIndex]}
