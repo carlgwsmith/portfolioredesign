@@ -10,6 +10,7 @@ import ISCaseStudy from './Components/Projects/IncomeSolver/ISCaseStudy';
 import FMCaseStudy from './Components/Projects/FOMOMachine/FMCaseStudy';
 import CCCaseStudy from './Components/Projects/CryptoCompare/CCCaseStudy';
 import RCCaseStudy from './Components/Projects/RetirementCalc/RCCaseStudy';
+import LCaseStudy from './Components/Projects/Loanic/LoanicCaseStudy'
 import 'react-image-lightbox/style.css';
 import './App.css';
 // import ReactGA from 'react-ga';
@@ -36,6 +37,7 @@ function App() {
         <Route path="/projects/cryptocompare" exact component={CCCaseStudy}/>
         <Route path="/projects/retirementcalc" exact component={RCCaseStudy}/>
         <Route path="/projects/fomomachine" exact component={FMCaseStudy}/>
+        <Route path="/projects/loanic" exact component={LCaseStudy}/>
         </Switch>
       </div>
       {/* <RouteChangeTracker/> */}
