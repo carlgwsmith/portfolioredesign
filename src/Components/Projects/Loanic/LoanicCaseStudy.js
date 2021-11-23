@@ -16,6 +16,7 @@ const Loaniccasestudy = () => {
       <ProjectOverview>
         <Header img={imageUrl}>
           <ProjName>Loanic</ProjName>
+          (Coming Soon)
           <HeroBtnWrapper>
           <Button href="#" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
             See Project {hover ? <ArrowForward/> : <ArrowRight/>}

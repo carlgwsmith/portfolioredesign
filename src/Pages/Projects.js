@@ -15,7 +15,7 @@ const Projects = () => {
         <SideB1><Card title="Income Solver" subtitle="UX Case Study" rgb="01,116,254" image={process.env.PUBLIC_URL + "/images/IScover2x.jpg"} url="/projects/incomesolver"/></SideB1>
         <SideA2><Card title="FOMO Machine" subtitle="Dev Case Study" rgb="106,107,255" image={process.env.PUBLIC_URL + "/images/FMcover2x.jpg"} url="/projects/fomomachine"/></SideA2>
         <SideB2><Card title="Retirement Calc" subtitle="Dev Case Study" rgb="39, 76, 133" image={process.env.PUBLIC_URL + "/images/RCcover2x.jpg"} url="/projects/retirementcalc"/></SideB2>
-        <SideC1><Card title="Loanic Mortgage" subtitle="UX Case Study" rgb="39, 76, 133" image={process.env.PUBLIC_URL + "/images/Loaniccover2xComingSoon.jpg"} url="#"/></SideC1>
+        <SideC1><Card title="Loanic Mortgage" subtitle="UX Case Study" rgb="39, 76, 133" image={process.env.PUBLIC_URL + "/images/Loaniccover2xComingSoon.jpg"} url="/projects/loanic"/></SideC1>
       </ProjectContainer>
       <VisResumeContainer>
       <About><h1 style={{margin:"0px"}}>Featured Visual Design</h1>
