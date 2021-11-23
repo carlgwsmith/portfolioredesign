@@ -16,7 +16,13 @@ const FMCaseStudy = () => {
   const projName = {
     fontSize: "4em",
     marginTop:"1em",
-    color:"#138bf3"
+    color:"#138bf3",
+    fontFamily: "'MuseoModerno', cursive",
+    fontWeight:'300',
+    textTransform:'uppercase',
+    background: '#08ffd6',
+    backgroundClip: 'text',
+    background: "linear-gradient(90deg,#08ffd6 20%,#a66bff 80%)",
   }
   const visionP = {
     fontSize:"1.4em",
@@ -35,7 +41,7 @@ const FMCaseStudy = () => {
     <div>
       <ProjectOverview>
         <Header img={imageUrl}>
-        <h1 style={projName}>FOMO Machine</h1>
+        <h1 className="fomoHead"><span style={{fontWeight:500}}>FOMO</span> Machine</h1>
           <HeroBtnWrapper>
             <Button href="https://carlgwsmith.github.io/FOMOMachineVue" target="_blank" onMouseEnter={onHover} onMouseLeave={onHover}>
             See Project {hover ? <ArrowForward/> : <ArrowRight/>}
