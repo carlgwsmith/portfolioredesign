@@ -2,13 +2,14 @@ import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
 import {ProjImage, Detail, ProjDetails, ProjImage2, ProjDetails2, ModelsContainer } from './ISelements';
 const CustomModels = () => {
-  const [isOpen, setOpen] = useState(false)
+  const [isCompareOpen, setCompareOpen] = useState(false)
+  const [isBuilderOpen, setBuilderOpen] = useState(false)
+  const [isMktplaceOpen, setMktPlaceOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
-  const images = [
-    "/images/COMPARECustomModel-MockupCrop.png",
-    "/images/ISBuilderIteration.png",
-    "/images/ISMarketplaceIteration.png"
-  ];
+  const compareImg = '/images/COMPARECustomModel-MockupCrop.png'
+  const mktplaceImg = '/images/ISMarketplaceIteration.png';
+  const builderImg = '/images/ISBuilderIteration.png';
+
   const mockup = {
     width: "100%",
     marginLeft:"auto",
@@ -24,11 +25,11 @@ const CustomModels = () => {
       <h2 style={h2special}>Challenge 4: Custom Investment Portfolios</h2>
       <ModelsContainer>
       <ProjImage>
-        <img src={process.env.PUBLIC_URL + '/images/COMPARECustomModel-MockupCrop.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
-        {isOpen && (
+        <img src={process.env.PUBLIC_URL + '/images/COMPARECustomModel-MockupCrop.png'} alt="on boarding comparison" style={mockup} onClick={() => setCompareOpen(true)}></img>
+        {isCompareOpen && (
       <Lightbox
-        mainSrc={images[0]}
-        onCloseRequest={() => setOpen(false)}
+        mainSrc={compareImg}
+        onCloseRequest={() => setCompareOpen(false)}
       />
     )}
         </ProjImage>
@@ -39,12 +40,12 @@ const CustomModels = () => {
         <ProjImage2>
         <Detail>When a financial advisor wants to build a new portfolio they will enter the portion of the software called the investment builder, this builder allows advisors to create simple or very complex investment portfolios.</Detail>
         <Detail>Products can be added by single years attributed to a dollar amount and change allocation over years as they client's risk preference changes ensure that the advisor is selecting allocation levels to the clients preference for that point in time.</Detail>
-        <img src={process.env.PUBLIC_URL + '/images/ISBuilderIteration.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
+        <img src={process.env.PUBLIC_URL + '/images/ISBuilderIteration.png'} alt="on boarding comparison" style={mockup} onClick={() => setBuilderOpen(true)}></img>
         <p style={{textAlign:'center', color:'#8b8b8b'}}>(Iteration of Builder Module)</p>
-        {isOpen && (
+        {isBuilderOpen && (
       <Lightbox
-        mainSrc={images[1]}
-        onCloseRequest={() => setOpen(false)}
+        mainSrc={builderImg}
+        onCloseRequest={() => setBuilderOpen(false)}
       />
     )}
         </ProjImage2>
@@ -52,12 +53,12 @@ const CustomModels = () => {
         <Detail>When using the builder the advisor will select "Add product" bringing them into the marketplace which will allow them to select from various investment products.</Detail>
         <Detail>The marketplace is designed to scale as stakeholder close more deals with product providing companies that want to offer their product in the software</Detail>
         <Detail>Once a product is added, it stacks in the builder among other selected investment vehicles.</Detail>
-        <img src={process.env.PUBLIC_URL + '/images/ISMarketplaceIteration.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>
+        <img src={process.env.PUBLIC_URL + '/images/ISMarketplaceIteration.png'} alt="on boarding comparison" style={mockup} onClick={() => setMktPlaceOpen(true)}></img>
         <p style={{textAlign:'center', color:'#8b8b8b'}}>(Iteration of Marketplace)</p>
-        {isOpen && (
+        {isMktplaceOpen && (
       <Lightbox
-        mainSrc={images[2]}
-        onCloseRequest={() => setOpen(false)}
+        mainSrc={mktplaceImg}
+        onCloseRequest={() => setMktPlaceOpen(false)}
       />
     )}
         </ProjDetails2>
