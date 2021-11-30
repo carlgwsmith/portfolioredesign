@@ -97,7 +97,7 @@ export default function ImageGallery() {
 }]
 
     return (
-        <div>
+        <div className="fade-in">
             <Gallery
       images={IMAGES}
       enableLightbox={true}

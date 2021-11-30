@@ -37,7 +37,7 @@ useEffect(() => {
 
   return (
     // <ProjCard style={{background: hover ? "linear-gradient(rgba("+props.rgb+", 0.6), rgba("+ props.rgb +", 0.6)),url(" + props.image + ")" : "url(" + props.image + ")"}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
-    <ProjCard onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
+    <ProjCard onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick} className="fade-in">
       <h3 style={{ margin:"0px", color:"#3f3f3f"}}>{props.title}</h3>
       <p style={{fontWeight:"400", fontSize:"14px", margin:"0px 0px 10px 0px", color:"#3f3f3f"}}>{props.subtitle}</p>
       <img src={props.image} alt={props.title} width="100%"/>

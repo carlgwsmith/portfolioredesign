@@ -363,7 +363,7 @@ display: grid;
 color:#3d3d3d;
 border:1px solid #ababab;
 padding:15px;
-grid-template-columns: 1fr 1fr 1fr ;
+grid-template-columns: .4fr 1fr 1fr ;
 grid-template-rows: .3fr .3fr .3fr .5fr .5fr .5fr;
 grid-template-areas: 
     "PersonaName PersonaName PersonaName"
@@ -413,6 +413,7 @@ grid-area: UserNeeds;
 padding:20px;
 border:2px solid orange;
 background-color: #ffeac5;
+margin-top: 25px;
 `
 export const JourneyMap = styled.div`
 &:hover{

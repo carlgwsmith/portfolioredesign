@@ -14,13 +14,12 @@ const AddAccounts = () => {
   }
   const h2special = {
     margin: "20px 0 20px 0",
-    fontSize: "1.75em",
-    color:"#3d3d3d",
-    textAlign:"center"
+    fontSize: "2em",
+    color:"#3d3d3d"
   }
   return (
     <div>
-      <h2 style={h2special}>Challenge 2: Contextual Support </h2>
+      <h2 style={h2special}>Contextual Support </h2>
       <SupportContainer>
       <ProjImage>
         <img src={process.env.PUBLIC_URL + '/images/HelpMocks.png'} alt="on boarding comparison" style={mockup} onClick={() => setOpen(true)}></img>

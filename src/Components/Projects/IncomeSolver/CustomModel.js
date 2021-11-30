@@ -6,7 +6,7 @@ const CustomModels = () => {
   const [isBuilderOpen, setBuilderOpen] = useState(false)
   const [isMktplaceOpen, setMktPlaceOpen] = useState(false)
   const [photoIndex, setPhotoIndex] = useState(0)
-  const compareImg = '/images/COMPARECustomModel-MockupCrop.png'
+  const compareImg = '/images/COMPARECustomModel-MockupCrop1.png'
   const mktplaceImg = '/images/ISMarketplaceIteration.png';
   const builderImg = '/images/ISBuilderIteration.png';
 
@@ -17,15 +17,15 @@ const CustomModels = () => {
   }
   const h2special = {
     margin: "20px 0 20px 0",
-    fontSize: "1.75em",
+    fontSize: "2em",
     color:"#3d3d3d"
   }
   return (
     <div>
-      <h2 style={h2special}>Challenge 4: Custom Investment Portfolios</h2>
+      <h2 style={h2special}>Custom Investment Portfolios</h2>
       <ModelsContainer>
       <ProjImage>
-        <img src={process.env.PUBLIC_URL + '/images/COMPARECustomModel-MockupCrop.png'} alt="on boarding comparison" style={mockup} onClick={() => setCompareOpen(true)}></img>
+        <img src={process.env.PUBLIC_URL + '/images/COMPARECustomModel-MockupCrop1.png'} alt="on boarding comparison" style={mockup} onClick={() => setCompareOpen(true)}></img>
         {isCompareOpen && (
       <Lightbox
         mainSrc={compareImg}

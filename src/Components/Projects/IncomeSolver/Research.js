@@ -1,6 +1,7 @@
 import React from 'react';
 import {GrUser} from 'react-icons/gr'
-import { URContainer, ROverview, QuoteBox, RBlockQuotes1, RBlockQuotes2, RBlockQuotes3, Persona1, Persona2 } from './ISelements';
+import { URContainer, ROverview, QuoteBox, RBlockQuotes1, RBlockQuotes2, RBlockQuotes3, Persona1 } from './ISelements';
+import Persona from './Persona1';
 
 const Research = () => {
   const quotation = {
@@ -44,6 +45,9 @@ const Research = () => {
        </QuoteBox>
          <p style={quoteattr}>- CFP.net</p>
        </RBlockQuotes3>
+       <Persona1>
+         <Persona/>
+       </Persona1>
     </URContainer>
   );
 }

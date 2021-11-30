@@ -83,7 +83,7 @@ export const ProjectOverview = styled.div`
 
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .15fr .15fr .15fr .15fr .3fr .2fr .25fr .65fr .4fr .1fr .5fr; 
+  grid-template-rows: .3fr .15fr .15fr .15fr .15fr .3fr .2fr .2fr .65fr .4fr .1fr .5fr; 
   grid-template-areas: 
     "Header"
     "Role"

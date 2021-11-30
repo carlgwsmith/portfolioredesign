@@ -91,18 +91,20 @@ export const URContainer = styled.div`
 display: grid;
 color:#3d3d3d;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: .2fr .35fr;
+grid-template-rows: .2fr .35fr .3fr;
 grid-template-areas: 
     "ROverview ROverview ROverview ROverview ROverview ROverview"
-    "RBlockQuotes1 RBlockQuotes1 RBlockQuotes2 RBlockQuotes2 RBlockQuotes3 RBlockQuotes3";
+    "RBlockQuotes1 RBlockQuotes1 RBlockQuotes2 RBlockQuotes2 RBlockQuotes3 RBlockQuotes3"
+    "Persona1 Persona1 Persona1 Persona1 Persona1 Persona1";
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .2fr .2fr .2fr .2fr; 
+  grid-template-rows: .2fr .2fr .2fr .2fr .2fr; 
   grid-template-areas:
     "ROverview"
     "RBlockQuotes1"
     "RBlockQuotes2"
-    "RBlockQuotes3";
+    "RBlockQuotes3"
+    "Persona1";
 } 
 `
 
@@ -131,6 +133,7 @@ padding:20px;
 export const Persona1 = styled.div`
 grid-area: Persona1;
 text-align:left;
+background-color:white;
 `
 export const Persona2 = styled.div`
 grid-area: Persona2;

@@ -12,7 +12,7 @@ const GettingStarted = () => {
   const [photoIndex, setPhotoIndex] = useState(0)
   return (
     <div>
-      <h2 style={{fontSize:"2em", fontWeight:'300'}}>Getting Started</h2>
+      <h2 style={{fontSize:"2em", fontWeight:'300'}}>User Flow</h2>
       <GSpara>We constructed a user flow of what a basic start to finish journey could be for a user. This helps
 us understand how users can interact with components of the product as well as helps us
 identify potential initial pain points.

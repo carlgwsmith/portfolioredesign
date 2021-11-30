@@ -15,12 +15,12 @@ const CustomModels = () => {
   }
   const h2special = {
     margin: "20px 0 20px 0",
-    fontSize: "1.75em",
+    fontSize: "2em",
     color:"#3d3d3d"
   }
   return (
     <div>
-      <h2 style={h2special}>Challenge 3: Custom Styling</h2>
+      <h2 style={h2special}>Style Guide</h2>
       <StyleGuideContainer>
       <ProjDetails>
           <Detail></Detail>
