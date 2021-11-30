@@ -14,16 +14,16 @@ const CustomModels = () => {
     marginRight:"auto"
   }
   const h2special = {
-    margin: "20px 0 20px 0",
+    margin: "20px 0 0 0",
     fontSize: "2em",
-    color:"#3d3d3d"
+    color:"#3d3d3d",
+    borderBottom:'1px solid #e5e5e5'
   }
   return (
     <div>
       <h2 style={h2special}>Style Guide</h2>
       <StyleGuideContainer>
       <ProjDetails>
-          <Detail></Detail>
           <Detail>In developing my research, we met with executive stakeholders and decided that a new design system should be created to emphasize the shift in product focus and freshen things up for legacy users. Our goal was to utilize the Quasar design system and makes tweaks to develop a system that more aligns with our brand.</Detail>
         </ProjDetails>
       <ProjImage>

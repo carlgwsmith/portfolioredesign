@@ -76,9 +76,10 @@ export const ProjectOverview = styled.div`
     "UserResearch UserResearch"
     "GS GS"
     "Accounts Accounts"
+    "Strategies Strategies"
     "Help Help"
-    "UI UI"
-    "Models Models";
+    "Models Models"
+    "UI UI";
 
 
 @media screen and (max-width:600px){
@@ -94,9 +95,10 @@ export const ProjectOverview = styled.div`
     "UserResearch"
     "GS"
     "Accounts"
+    "Strategies"
     "Help"
-    "UI"
-    "Models";
+    "Models"
+    "UI";
 } 
 `
 export const Vision = styled.div`
@@ -155,6 +157,12 @@ background-color:#6effa8;
 `
 export const Accounts = styled.div`
 grid-area: Accounts;
+text-align:left;
+background-color:#fff;
+padding:30px;
+`
+export const Strategies = styled.div`
+grid-area: Strategies;
 text-align:left;
 background-color:#fff;
 padding:30px;

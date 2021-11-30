@@ -26,6 +26,7 @@ margin-right:auto;
 export const Detail = styled.p`
 font-size: 1.1em;
 line-height:1.5;
+padding:15px;
 margin-top:0;
 color:"#3d3d3d";
 @media screen and (max-width:600px){
@@ -192,6 +193,28 @@ export const StyleGuideContainer = styled.div`
   grid-template-rows: .20fr .8fr; 
   grid-template-areas: 
     "ProjImage"
+    "ProjDetails";
+} 
+`
+export const StratContainer = styled.div`
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows:  1fr;
+  gap: 0px 0px;
+  padding:0px;
+  grid-template-areas:
+  "ProjDetails ProjDetails";
+  
+@media screen and (max-width:900px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  grid-template-areas:
+  "ProjDetails";
+} 
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .1fr; 
+  grid-template-areas: 
     "ProjDetails";
 } 
 `

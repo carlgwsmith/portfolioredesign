@@ -9,8 +9,9 @@ import CustomModels from './CustomModel';
 import Carl from './Carl'
 import IsProblem from './Problem'
 import IsSolution from './Solution'
+import StrategiesList from './StrategiesList';
 import Research from './Research';
-import { Header, Role, Problem, Solution, Vision, Challenge, GS, ProjectOverview, Accounts, Help, Models, CustomStyle, Button} from '../ProjectElements';
+import { Header, Role, Problem, Solution, Vision, Challenge, GS, ProjectOverview, Accounts, Strategies, Help, Models, CustomStyle, Button} from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 import { UserResearch } from './ISelements'
 import Protect from 'react-app-protect'
@@ -59,15 +60,18 @@ const ISCaseStudy = () => {
         <Accounts>
           <AddAccounts/>
         </Accounts>
+        <Strategies>
+          <StrategiesList/>
+        </Strategies>
         <Help>
           <Support/>
         </Help>
-        <CustomStyle>
-          <StyleGuide/>
-        </CustomStyle>
         <Models>
           <CustomModels/>
         </Models>
+        <CustomStyle>
+          <StyleGuide/>
+        </CustomStyle>
       </ProjectOverview>
     </div>
     </Protect>

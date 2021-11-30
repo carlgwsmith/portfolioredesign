@@ -15,7 +15,8 @@ const AddAccounts = () => {
   const h2special = {
     margin: "20px 0 20px 0",
     fontSize: "2em",
-    color:"#3d3d3d"
+    color:"#3d3d3d",
+    borderBottom:'1px solid #e5e5e5'
   }
   return (
     <div>
