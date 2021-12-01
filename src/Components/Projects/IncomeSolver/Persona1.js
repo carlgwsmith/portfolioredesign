@@ -11,11 +11,11 @@ const Persona1 = () => {
         <PersonaName>
           <h2>Persona: Henry</h2>
         </PersonaName>
-        <PersonaQuote style={{paddingLeft:'20px', fontSize:"18px", fontWeight:"500"}}>“A good financial advisor needs to show his clients his value.”</PersonaQuote>
+        <PersonaQuote style={{paddingLeft:'20px', fontSize:"18px", fontWeight:"500"}}>“A good financial advisor needs to show his clients value.”</PersonaQuote>
         <PersonaImg><img src={process.env.PUBLIC_URL + '/images/henry.jpg'} style={personaimg}></img></PersonaImg>
         <ProblemStatement style={{paddingLeft:'20px'}}>
           <p style={{fontWeight:"600"}}>Problem Statement:</p>
-          <p>Henry is a financial advisor with many clients, he wants a way to easily present drawdown strategies to his client to ensure them that he is planning so the most tax-efficient retirement spending plan.</p>
+          <p>Henry is a financial advisor with many clients, he wants a way to easily present drawdown strategies to his client to ensure that he is planning for the most tax-efficient retirement spending plan.</p>
         </ProblemStatement>
         <PersonaDetails>
           <ul>
