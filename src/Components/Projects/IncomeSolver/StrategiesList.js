@@ -19,7 +19,7 @@ export default function StrategiesList() {
       <StratIdeasContainer>
         <ProjDetails>
         <h2 style={h2special}>Selecting Strategies</h2>
-          <Detail>One of the most attractive features of the software to consumers is the ability to choose from plenty of system generated drawdown strategies based on the account input and present that to you clients in a meeting.</Detail>
+          <Detail>One of the most attractive features of the software to consumers is the ability to choose from plenty of system generated drawdown strategies based on the account input and present that to clients in a meeting. Through iteration we tested and tried various designs that delivered large amounts of strategy ideas in lists. Strategies are ranked by ending portfolio value or other filters that the user can choose.</Detail>
         </ProjDetails>
         <ProjImage style={{textAlign:'center'}}>
         <CtaImg src={process.env.PUBLIC_URL + '/images/ISstratIteration.png'} alt="on boarding comparison" onClick={() => setOpen(true)}></CtaImg>
@@ -34,7 +34,7 @@ export default function StrategiesList() {
         <p style={{textAlign:"center", marginTop:'0px', color:'#8b8b8b'}}>(Production Version)</p>
         </ProjImage2>
         <ProjDetails2>
-        <Detail>With the redesign of the software, our team wanted to be able to showcase the vastness of the system generated strategies in a "Strategy Ideas" pages. These strategies are ranked based on final portfolio value. Special "Strategies to Consider", which our stakeholders have deemed as popular styles, are highlighted and showcased.</Detail>
+        <Detail>With the vastness of the strategies section we ran into issues of clients wanting typical "industry-standard" (For Example: Best Roth Strategy, Best Non-Roth, Lowest Paid Taxes) types of strategies to be more easily located. A special section titled "Strategies to Consider", which our stakeholders have deemed as popular styles, are highlighted and showcased above the fold and also within the greater strategy list.</Detail>
         </ProjDetails2>
       </StratIdeasContainer>
     )
