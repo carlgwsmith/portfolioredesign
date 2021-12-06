@@ -18,6 +18,27 @@ export const ProjDetailsContainer = styled.div`
     "ProjDetails";
 } 
 `
+export const StratIdeasContainer = styled.div`
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: .25fr 1fr .25fr; 
+  gap: 0px 0px;
+  padding:0px;
+  grid-template-areas: 
+    "ProjDetails ProjDetails"
+    "ProjImage ProjImage2"
+    "ProjDetails2 ProjDetails2";
+  
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: .5fr .2fr .5fr .2fr; 
+  grid-template-areas:
+  "ProjDetails"
+    "ProjImage"
+    "ProjDetails2"
+    "ProjImage2";
+} 
+`
 export const CtaImg = styled.img`
 width:100%;
 margin-left:auto;

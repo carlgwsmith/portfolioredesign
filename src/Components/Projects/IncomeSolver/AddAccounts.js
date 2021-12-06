@@ -16,10 +16,9 @@ const AddAccounts = () => {
     borderBottom:'2px solid #e5e5e5'
   }
   return (
-    <div>
-      <h2 style={h2special}>Simplify Onboarding</h2>
       <ProjDetailsContainer>
       <ProjImage>
+      <h2 style={h2special}>Simplify Onboarding</h2>
         <CtaImg src={process.env.PUBLIC_URL + '/images/compareaddaccounts-horzcrop.png'} alt="on boarding comparison" onClick={() => setOpen(true)}></CtaImg>
         {isOpen && (
       <Lightbox
@@ -44,7 +43,6 @@ const AddAccounts = () => {
           <Detail><strong>Solution: </strong>Our team "wizard-ized" the profile into manageable and more streamlined sections, giving it a step-by-step feel as opposed to the previously unguided method. Additional features around adding accounts were added such as an automatic sync feature using <a href="https://plaid.com/">plaid</a> and drop-off prevention landing page to allow busy advisors to pickup where they left off in inputing a client's detailed information. </Detail>
         </ProjDetails>
       </ProjDetailsContainer>
-    </div>
   );
 }
 
