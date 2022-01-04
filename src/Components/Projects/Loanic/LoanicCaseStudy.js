@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Carl from './Carl'
-import {ProjectOverview, Header, ProjName, Role} from './Lelements'
+import Problemsolution from './ProblemSolution';
+import ProcessContent from './Process';
+import {ProjectOverview, Header, ProjName, Role, Problem, Process, ProcessContainer} from './Lelements'
 import { Button } from '../ProjectElements';
 import { HeroBtnWrapper, ArrowForward, ArrowRight } from '../../Home/BannerElements';
 
@@ -26,6 +28,12 @@ const Loaniccasestudy = () => {
         <Role>
           <Carl/>
         </Role>
+        <Problem>
+          <Problemsolution/>
+        </Problem>
+        <Process>
+        <ProcessContent/>
+      </Process>
       </ProjectOverview>
     </div>
   );

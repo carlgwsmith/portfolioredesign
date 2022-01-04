@@ -2,26 +2,32 @@ import styled from "styled-components";
 export const ProjectOverview = styled.div`
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: .55fr; 
+  grid-template-rows: 1fr .4fr .5fr .5fr;
   gap: 0px 0px;
   padding:0px;
   grid-template-areas: 
     "Header Header Header"
-    "Role Role Role";
+    "Role Role Role"
+    "Problem Problem Problem"
+    "Process Process Process";
 @media screen and (max-width:900px){
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: .3fr .5fr; 
+  grid-template-rows: .3fr .5fr .5fr .5fr; 
   grid-template-areas: 
     "Header Header"
-    "Role Role";
+    "Role Role"
+    "Problem Problem"
+    "Process Process";
 } 
   
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .3fr .5fr ; 
+  grid-template-rows: .3fr .35fr .4fr .4fr; 
   grid-template-areas: 
     "Header"
-    "Role";
+    "Role"
+    "Problem"
+    "Process";
 } 
 `
 export const Header = styled.div`
@@ -58,7 +64,7 @@ grid-template-areas:
     "MyRole Duration Responsibility";
 @media screen and (max-width:600px){
   grid-template-columns: 1fr; 
-  grid-template-rows: .5fr .5fr .5fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
   grid-template-areas:
     "MyRole"
     "Duration"
@@ -81,6 +87,63 @@ text-align:left;
 export const Role = styled.div`
 grid-area: Role;
 line-height: 2;
-padding: 10px 30px;
 background-color: #41CC89;
+`
+export const Problem = styled.div`
+grid-area: Problem;
+line-height: 2;
+`
+export const Process = styled.div`
+grid-area: Process;
+line-height: 2;
+`
+
+export const ProblemContainer = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1.5fr 1.5fr;
+color: white;
+grid-template-areas: 
+    "Prob Solution"
+    "Prob Solution";
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: 2fr; 
+  grid-template-areas:
+    "Prob"
+    "Solution";
+} 
+`
+export const Prob = styled.div`
+grid-area: Prob;
+line-height: 2;
+padding: 10px 30px;
+background-color: #e93d3d;
+text-align:left;
+`
+export const Solution = styled.div`
+grid-area: Solution;
+line-height: 2;
+padding: 10px 30px;
+background-color: #98ff98;
+color: #00691c;
+text-align:left;
+`
+
+export const ProcessContainer = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+color: #444;
+grid-template-areas: 
+    "ProcessImg ProcessImg"
+@media screen and (max-width:600px){
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  grid-template-areas:
+    "ProcessImg";
+} 
+`
+export const ProcessImg = styled.img`
+grid-area: ProcessImg;
 `
