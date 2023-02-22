@@ -16,7 +16,7 @@ const Banner = () => {
         <HeroImg src={process.env.PUBLIC_URL + '/images/carl1.jpg'}></HeroImg>
         <HeroSocial>
             <a href="https://www.behance.net/carlvskansas" target="_blank"><Behance/></a>
-            <a href="https://dribbble.com/carlvskansas" target="_blank"><Dribble/></a>
+            <a href="https://dribbble.com/carlgwsmith" target="_blank"><Dribble/></a>
             <a href="https://www.linkedin.com/in/carl-gw-smith/" target="_blank"><Linkedin/></a>
         </HeroSocial>
         <Header/>
